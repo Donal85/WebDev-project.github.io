@@ -1,4 +1,68 @@
-p {
+
+.title{
+    text-align: center;
+}
+/*Sets the style and colour of the nav bar*/
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(44, 41, 41)
+}
+/*Google font Fjalla One with a size of 20px applied to navbar page links*/
+.links{
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 20px;
+}
+/*Floats the links to the left of the page*/
+.links{
+    float: left;
+}
+/*Sets the style and colour of the links within the nav bar*/
+.links a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 12px 14px;
+    text-decoration: none;
+}
+/*Causes the text within the navbar to change to gold when moused over and the background of the link to change to black*/
+.links :hover{
+    color: gold;
+    background-color: black;
+}
+/*Google font Fjalla One with a size of 20px applied to navbar contact link and Floats the contact link within the navbar to the right*/
+.infolink{
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 20px;
+    float: right;
+}
+
+/*Sets the style and colour of the nav bar contact link*/
+.infolink a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+/*Causes the text of the contact link within the navbar to change to gold and the background to change to black on mouse over*/
+.infolink :hover{
+    color: gold;
+    background-color: #111;
+}
+.footer img{
+    float: left;
+    width: 2%;
+    height: 38px;
+    box-sizing: border-box;
+    padding: 2px;
+}
+.social{
     text-decoration: underline;
-    color: red;
+}
+#copyright{
+    margin-right: 150px;
+    text-align: center;
 }
