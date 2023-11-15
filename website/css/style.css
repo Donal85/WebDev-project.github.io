@@ -24,13 +24,13 @@
 .bar {
     list-style-type: none;
     width: 100%;
-    background-color: rgb(44, 41, 41)
+    background-color: gray;
 }
 
 /* Google font Fjalla One with a size of 20px applied to navbar page, links floats the links to the left of the page */
 .links{
     font-family: 'Fjalla One', sans-serif;
-    font-size: 20px;
+    font-size: 22px;
     float: left;
 }
 
@@ -46,18 +46,17 @@
 /*Causes the text within the navbar to change to gold when moused over and the background of the link to change to black*/
 .links :hover{
     color: gold;
-    background-color: black;
 }
 
 /*Whichever page the user is on will be highlighted in green as a visual cue*/
 .current{
-    background-color: rgb(29, 158, 29);
+    background-color: rgb(94, 94, 193);
 }
 
 /*Google font Fjalla One with a size of 20px applied to navbar contact link and Floats the contact link within the navbar to the right*/
 .infolink {
     font-family: 'Fjalla One', sans-serif;
-    font-size: 20px;
+    font-size: 22px;
     float: right;
 }
 
@@ -73,7 +72,6 @@
 /*Causes the text of the contact link within the navbar to change to gold and the background to change to black on mouse over*/
 .infolink :hover{
     color: gold;
-    background-color: #111;
 }
 
 .footer img{
