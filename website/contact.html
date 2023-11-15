@@ -6,6 +6,117 @@
     <title>Document</title>
 </head>
 <body>
+    <div>
+        <form id="form" action="" name="cake order form">
+            <h3 id="contact">Get in Contact</h3>
+            <br>
+            <!--the for attribute is for when we click the Name literal the input wich is referenced 
+                will be automaticaly selected -->
+            <label id="name_label" for="name">Name:</label>
+            <!--required means the field must NOTs be left empty-->
+            <input id="name" type="text" minlength="3" maxlength="20" placeholder="name" required/>
+            <br>
+            <label id="address_label" for="address">Address:</label>
+            <input id="address" type="text" placeholder="address" required/>
+            <br>
+            <label id="phone_number_label" for="phone_number">Phone Number:</label>
+            <!-- 
+                -the pattern allow us to input 10 digit phone number including area code, ex: ###-###-####
+                -because the task is asking me to have a maximum of 10 digit input I will remove the dashes "-" from the pattern  
+                -I could also add spaces instead of dashes for more clear reading of the phone number-->
+            <input id="phone_number" type="tel" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" name="phone_input" maxlength="10" minlength="10" placeholder="phone number" required/>
+            <br>
+            <label id="email_label" for="email">Email:</label>
+            <!--
+                -placeholder is a temporary text displayed in the box, when the box is clicked to type in the email the text dissapears
+                -the pattern breakdown: 
+                  -  .+ allow us to input one or more characters of any type before @
+                  -  @  
+                  -  .+ allow us to input one or more characters of any type after @
+                  -  \. matches the .
+                  -  ([a-z]+) represents one or more alphabetic characters after the .
+            -->
+            <input id="email" type="email" pattern=".+@.+\.([a-z]+)" placeholder="email" name="email_input"/>
+            <br>
+            <br>
+            <label id="contact_preference_label" for="contact_preference">Contact Preference: </label>
+            <label id="phone_label" for="phone">Phone</label>
+            <input type="radio" id="phone" name="phone_radio_selector"/>
+            <label id="email2_label" for="email2">Email</label>
+            <input type="radio" id="email2" name="email_radio_selector"/>
+            <br>
+            <br>
+            <!--
+                -the for attribute from the label must match the id attribute. 
+                -if it matches then when the Desired Pets is clicked it will automatically select the option box.
+            -->
+            <label id="select_cake_label" for="select_cake">Select Cake:</label>
+            <label for="category">Select a Category:</label>
+            <select id="category">
+                <option value="" selected disabled>Select an option</option>
+                <!-- Occasions Category -->
+                <optgroup label="Occasions">
+                    <option value="anniversary_cake">anniversary_cake</option>
+                    <option value="anniversary_cake_2">anniversary_cake_2</option>
+                    <option value="anniversary_cake_3">anniversary_cake_3</option>
+                    <option value="anniversary_cake_4">anniversary_cake_4</option>
+                </optgroup>
+                <!-- Desserts Category -->
+                <optgroup label="Desserts">
+                    <option value="dessert">dessert</option>
+                    
+                    <!-- Add more options as needed -->
+                </optgroup>
+                
+                <!-- Add more categories as needed -->
+            </select>
     
+            <br>
+            <br>
+            <label id="comments_label" for="aditional_comments"><b>Additional Comments</b></label>
+            <br>
+            <textarea id="aditional_comments" name="comments" cols="30" rows="10" placeholder="Aditional comments..."></textarea>
+            <br>
+            <br>
+            <p>
+                <input id="terms_conditions" type="checkbox" name="tc" required/>
+                <b>Terms And Conditions</b>
+            </p>
+            <p>
+                <input id="newsletter" type="checkbox" name="tc"/>
+                <b>Subscribe to Monthly Newsletter</b>
+            </p>
+            <br>
+            <button id="cake_button" type="submit">Submit</button>
+        </form>
+
+        <form action="#">
+            <label for="category">Select a Category:</label>
+            <select id="category">
+                <option value="" selected disabled>Select an option</option>
+                
+                <!-- Occasions Category -->
+                <optgroup label="Occasions">
+                    <option value="birthday">Birthday</option>
+                    <option value="wedding">Wedding</option>
+                    <!-- Add more options as needed -->
+                </optgroup>
+    
+                <!-- Desserts Category -->
+                <optgroup label="Desserts">
+                    <option value="chocolate">Chocolate</option>
+                    <option value="vanilla">Vanilla</option>
+                    <!-- Add more options as needed -->
+                </optgroup>
+                
+                <!-- Add more categories as needed -->
+            </select>
+    
+         
+        </form>
+    
+       
+    
+
 </body>
 </html>
