@@ -1,11 +1,13 @@
-
+header{
+    background-color: rgb(241, 208, 213);
+}
 .title{
     text-align: center;
     margin-right: 1%;
 }
 
 /*set the logo */
-.row img {
+#logo {
     display: inline-flex;
     float: left;
     width: 70px;
@@ -39,7 +41,7 @@
     display: block;
     color: white;
     text-align: center;
-    padding: 12px 14px;
+    padding: 14px 16px;
     text-decoration: none;
 }
 
