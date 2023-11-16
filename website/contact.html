@@ -1,36 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact-Info</title>
-    <!-- Required links for Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <!--links to selected google fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Fjalla+One&family=Manrope&family=Overpass&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
-    <!--Links to css style sheet-->
-    <link rel="stylesheet" href="css/style.css">
-    <!--Links to js script sheet-->
-    <script defer src="script/script.js"></script>
-</head>
-<body>
-    <header>
-        <!--Creates a Bootstrap header with 1 row and 1 column-->
-        <div class="row">
-            <div class="col-sm-12">
-                <!--Image credit Flaviu Vanca-->
-                <a c href="index.html"><img id="logo" src="images/logo/logo3.png" alt="logo"></a>
-                <div class="title">
-                    <h1>Pastry Paradise</h1>
-                    <h2>Best Cakes In <em>Ireland!</em></h2>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact-Info</title>
+        <!-- Required links for Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <!--links to selected google fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Fjalla+One&family=Manrope&family=Overpass&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+        <!--Links to css style sheet-->
+        <link rel="stylesheet" href="css/style.css">
+        <!--Links to js script sheet-->
+        <script defer src="script/script.js"></script>
+    </head>
+    <body>
+        <header>
+            <!--Creates a Bootstrap header with 1 row and 1 column-->
+            <div class="row">
+                <div class="col-sm-12">
+                    <!--Image credit Flaviu Vanca-->
+                    <a c href="index.html"><img id="logo" src="images/logo/logo3.png" alt="logo"></a>
+                    <div class="title">
+                        <h1>Pastry Paradise</h1>
+                        <h2>Best Cakes In <em>Ireland!</em></h2>
+                    </div>
                 </div>
             </div>
-          </div>
-            <br>
+                <br>
         </header>
         <!--Creates navbar and anchor links to the other website pages-->
         <nav class="navbar">
@@ -48,128 +48,127 @@
                 <li class="infolink"><a class="current" href="contact.html">Contact-Info</a></li>
             </ul>
         </nav>
-    <div>
-        <form id="form" action="" name="cake order form">
-            <h3 id="contact">Get in Contact</h3>
-            <br>
-            <!--the for attribute is for when we click the Name literal the input wich is referenced 
-                will be automaticaly selected -->
-            <label id="name_label" for="name">Name:</label>
-            <!--required means the field must NOTs be left empty-->
-            <input id="name" type="text" minlength="3" maxlength="20" placeholder="name" required/>
-            <br>
-            <label id="address_label" for="address">Address:</label>
-            <input id="address" type="text" placeholder="address" required/>
-            <br>
-            <label id="phone_number_label" for="phone_number">Phone Number:</label>
-            <!-- 
-                -the pattern allow us to input 10 digit phone number including area code, ex: ###-###-####
-                -because the task is asking me to have a maximum of 10 digit input I will remove the dashes "-" from the pattern  
-                -I could also add spaces instead of dashes for more clear reading of the phone number-->
-            <input id="phone_number" type="tel" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" name="phone_input" maxlength="10" minlength="10" placeholder="phone number" required/>
-            <br>
-            <label id="email_label" for="email">Email:</label>
-            <!--
-                -placeholder is a temporary text displayed in the box, when the box is clicked to type in the email the text dissapears
-                -the pattern breakdown: 
-                  -  .+ allow us to input one or more characters of any type before @
-                  -  @  
-                  -  .+ allow us to input one or more characters of any type after @
-                  -  \. matches the .
-                  -  ([a-z]+) represents one or more alphabetic characters after the .
-            -->
-            <input id="email" type="email" pattern=".+@.+\.([a-z]+)" placeholder="email" name="email_input"/>
-            <br>
-            <br>
-            <!--Label for Contact preference-->
-            <label id="contact_preference_label" for="contact_preference">Contact Preference: </label>
-            <!--label for phone-->
-            <label id="phone_label" for="phone">Phone</label>
-            <input type="radio" id="phone" name="contact_preference"/>
-            <label id="email2_label" for="email2">Email</label>
-            <input type="radio" id="email2" name="contact_preference"/>
-            <br>
-            <br>
-            <!--
-                -the for attribute from the label must match the id attribute. 
-                -if it matches then when the Desired Pets is clicked it will automatically select the option box.
-            -->
-            <label id="select_cake_label" for="select_cake">Select Cake:</label>
-            <select id="category">
-                <option value="" >Select Cake</option>
-                <!--Wedding Category-->
-                <optgroup label="Wedding">
-                    <option value="wedding_cake">wedding_cake</option>
-                    <option value="wedding_cake_2">wedding_cake_2</option>
-                    <option value="wedding_cake_3">wedding_cake_3</option>
-                    <option value="wedding_cake_4">wedding_cake_4</option>
-                </optgroup>
-                <!-- Occasions Category -->
-                <optgroup label="Occasions">
-                <!--Add Options-->
-                    <option value="anniversary_cake">anniversary_cake</option>
-                    <option value="anniversary_cake_2">anniversary_cake_2</option>
-                    <option value="anniversary_cake_3">anniversary_cake_3</option>
-                    <option value="anniversary_cake_4">anniversary_cake_4</option>
-                </optgroup>
-                <!--Luxury Category-->
-                <optgroup label="Luxury">
+        <div>
+            <form id="form" action="" name="cake order form">
+                <h3 id="contact">Get in Contact</h3>
+                <br>
+                <!--the for attribute is for when we click the Name literal the input wich is referenced 
+                    will be automaticaly selected -->
+                <label id="name_label" for="name">Name:</label>
+                <!--required means the field must NOTs be left empty-->
+                <input id="name" type="text" minlength="3" maxlength="20" placeholder="name" required/>
+                <br>
+                <label id="address_label" for="address">Address:</label>
+                <input id="address" type="text" placeholder="address" required/>
+                <br>
+                <label id="phone_number_label" for="phone_number">Phone Number:</label>
+                <!-- 
+                    -the pattern allow us to input 10 digit phone number including area code, ex: ###-###-####
+                    -because the task is asking me to have a maximum of 10 digit input I will remove the dashes "-" from the pattern  
+                    -I could also add spaces instead of dashes for more clear reading of the phone number-->
+                <input id="phone_number" type="tel" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" name="phone_input" maxlength="10" minlength="10" placeholder="phone number" required/>
+                <br>
+                <label id="email_label" for="email">Email:</label>
+                <!--
+                    -placeholder is a temporary text displayed in the box, when the box is clicked to type in the email the text dissapears
+                    -the pattern breakdown: 
+                    -  .+ allow us to input one or more characters of any type before @
+                    -  @  
+                    -  .+ allow us to input one or more characters of any type after @
+                    -  \. matches the .
+                    -  ([a-z]+) represents one or more alphabetic characters after the .
+                -->
+                <input id="email" type="email" pattern=".+@.+\.([a-z]+)" placeholder="email" name="email_input"/>
+                <br>
+                <br>
+                <!--Label for Contact preference-->
+                <label id="contact_preference_label" for="contact_preference">Contact Preference: </label>
+                <!--label for phone-->
+                <label id="phone_label" for="phone">Phone</label>
+                <input type="radio" id="phone" name="contact_preference"/>
+                <label id="email2_label" for="email2">Email</label>
+                <input type="radio" id="email2" name="contact_preference"/>
+                <br>
+                <br>
+                <!--
+                    -the for attribute from the label must match the id attribute. 
+                    -if it matches then when the Desired Pets is clicked it will automatically select the option box.
+                -->
+                <label id="select_cake_label" for="select_cake">Select Cake:</label>
+                <select id="category">
+                    <option value="" >Select Cake</option>
+                    <!--Wedding Category-->
+                    <optgroup label="Wedding">
+                        <option value="wedding_cake">wedding_cake</option>
+                        <option value="wedding_cake_2">wedding_cake_2</option>
+                        <option value="wedding_cake_3">wedding_cake_3</option>
+                        <option value="wedding_cake_4">wedding_cake_4</option>
+                    </optgroup>
+                    <!-- Occasions Category -->
+                    <optgroup label="Occasions">
                     <!--Add Options-->
-                    <option value="luxury_cake">luxury_cake</option>
-                    <option value="luxury_cake_2">luxury_cake_2</option>
-                    <option value="luxury_cake_3">luxury_cake_3</option>
-                    <option value="luxury_cake_4">luxury_cake_4</option>
-                </optgroup>
-                <!-- Desserts Category -->
-                <optgroup label="Desserts">
-                    <!--Add Options-->
-                    <option value="dessert">dessert</option>
-                    <option value="dessert_2">dessert_2</option>
-                    <option value="dessert_3">dessert_3</option>
-                    <option value="dessert_4">dessert_4</option>
-                </optgroup>
-                <!--Cupcake Category-->
-                <optgroup label="Cupcake">
-                    <option value="cupcake">cupcake</option>
-                    <option value="cupcake_2">cupcake_2</option>
-                    <option value="cupcake_3">cupcake_3</option>
-                    <option value="cupcake_4">cupcake_4</option>
-                </optgroup>
-                <!--Seasonal-->
-                <optgroup label="Seasonal">
-                    <!--Add Options-->
-                    <option value="christmas_cake">christmas_cake</option>
-                    <option value="christmas_cake_2">christmas_cake_2</option>
-                    <option value="christmas_cake_3">christmas_cake_3</option>
-                    <option value="christmas_cake_4">christmas_cake_4</option>
-                </optgroup>
-            </select>
-            <br>
-            <br>
-            <!--Label for Additional Comments-->
-            <label id="comments_label" for="aditional_comments"><b>Additional Comments</b></label>
-            <br>
-            <!--Text Area-->
-            <textarea id="aditional_comments" name="comments" cols="30" rows="10" placeholder="Aditional comments..."></textarea>
-            <br>
-            <br>
-            <p class="terms_newsletter">
-                <!--Terms and Conditions-->
-                <input id="terms_conditions" type="checkbox" name="tc" required/>
-                <b>Terms And Conditions</b>
-            </p>
-            <p class="terms_newsletter">
-                <!--Subscribe to Monthly Newsletter-->
-                <input id="newsletter" type="checkbox" name="tc"/>
-                <b>Subscribe to Monthly Newsletter</b>
-            </p>
-            <br>
-            <!--Button to Submit the  form-->
-            <button id="cake_button" type="submit">Submit</button>
-        </form>
-
-    
-    <!--Creates a bootstrap footer with 1 row and 1 column-->
+                        <option value="anniversary_cake">anniversary_cake</option>
+                        <option value="anniversary_cake_2">anniversary_cake_2</option>
+                        <option value="anniversary_cake_3">anniversary_cake_3</option>
+                        <option value="anniversary_cake_4">anniversary_cake_4</option>
+                    </optgroup>
+                    <!--Luxury Category-->
+                    <optgroup label="Luxury">
+                        <!--Add Options-->
+                        <option value="luxury_cake">luxury_cake</option>
+                        <option value="luxury_cake_2">luxury_cake_2</option>
+                        <option value="luxury_cake_3">luxury_cake_3</option>
+                        <option value="luxury_cake_4">luxury_cake_4</option>
+                    </optgroup>
+                    <!-- Desserts Category -->
+                    <optgroup label="Desserts">
+                        <!--Add Options-->
+                        <option value="dessert">dessert</option>
+                        <option value="dessert_2">dessert_2</option>
+                        <option value="dessert_3">dessert_3</option>
+                        <option value="dessert_4">dessert_4</option>
+                    </optgroup>
+                    <!--Cupcake Category-->
+                    <optgroup label="Cupcake">
+                        <option value="cupcake">cupcake</option>
+                        <option value="cupcake_2">cupcake_2</option>
+                        <option value="cupcake_3">cupcake_3</option>
+                        <option value="cupcake_4">cupcake_4</option>
+                    </optgroup>
+                    <!--Seasonal-->
+                    <optgroup label="Seasonal">
+                        <!--Add Options-->
+                        <option value="christmas_cake">christmas_cake</option>
+                        <option value="christmas_cake_2">christmas_cake_2</option>
+                        <option value="christmas_cake_3">christmas_cake_3</option>
+                        <option value="christmas_cake_4">christmas_cake_4</option>
+                    </optgroup>
+                </select>
+                <br>
+                <br>
+                <!--Label for Additional Comments-->
+                <label id="comments_label" for="aditional_comments"><b>Additional Comments</b></label>
+                <br>
+                <!--Text Area-->
+                <textarea id="aditional_comments" name="comments" cols="30" rows="10" placeholder="Aditional comments..."></textarea>
+                <br>
+                <br>
+                <p class="terms_newsletter">
+                    <!--Terms and Conditions-->
+                    <input id="terms_conditions" type="checkbox" name="tc" required/>
+                    <b>Terms And Conditions</b>
+                </p>
+                <p class="terms_newsletter">
+                    <!--Subscribe to Monthly Newsletter-->
+                    <input id="newsletter" type="checkbox" name="tc"/>
+                    <b>Subscribe to Monthly Newsletter</b>
+                </p>
+                <br>
+                <!--Button to Submit the  form-->
+                <button id="cake_button" type="submit">Submit</button>
+            </form>
+        </div>
+         <!--Creates a bootstrap footer with 1 row and 1 column-->
         <div class="row">
             <div class="col-sm-12">
                 <footer class="footer">
@@ -191,8 +190,6 @@
                 </footer>
             </div>
         </div>
-            
-    
 
-</body>
+    </body>
 </html>
