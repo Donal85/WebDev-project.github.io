@@ -75,7 +75,24 @@ header{
 .infolink :hover{
     color: gold;
 }
+#cake1{
+    width: 60%;
+    margin-left: 20%;
+}
 
+#cake2{
+    width: 60%;
+    height: 70%;
+    margin-left: 20%;
+    margin-right: 30%;
+}
+
+#minigame {
+    text-align: center;
+}
+#start{
+    display: inline-block;
+}
 .footer img{
     float: left;
     width: 2%;
