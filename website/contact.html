@@ -54,21 +54,21 @@
                 <br>
                 <!--the for attribute is for when we click the Name literal the input wich is referenced 
                     will be automaticaly selected -->
-                <label id="name_label" for="name">Name:</label>
+                <label id="name_label" for="name"><b>Name:</b></label>
                 <!--required means the field must NOTs be left empty-->
-                <input id="name" type="text" minlength="3" maxlength="20" placeholder="name..." required/>
+                <input id="name" type="text" minlength="3" maxlength="200" size="30" placeholder="name..." required/>
                 <br>
-                <label id="address_label" for="address">Address:</label>
-                <input id="address" type="text" placeholder="address..." required/>
+                <label id="address_label" for="address"><b>Address:</b></label>
+                <input id="address" type="text" size="30" placeholder="address..." required/>
                 <br>
-                <label id="phone_number_label" for="phone_number">Phone Number:</label>
+                <label id="phone_number_label" for="phone_number"><b>Phone Number:</b></label>
                 <!-- 
                     -the pattern allow us to input 10 digit phone number including area code, ex: ###-###-####
                     -because the task is asking me to have a maximum of 10 digit input I will remove the dashes "-" from the pattern  
                     -I could also add spaces instead of dashes for more clear reading of the phone number-->
-                <input id="phone_number" type="tel" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" name="phone_input" maxlength="10" minlength="10" placeholder="phone number..." required/>
+                <input id="phone_number" type="tel" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" name="phone_input" maxlength="10" minlength="10" size="30" placeholder="phone number..." required/>
                 <br>
-                <label id="email_label" for="email">Email:</label>
+                <label id="email_label" for="email"><b>Email:</b></label>
                 <!--
                     -placeholder is a temporary text displayed in the box, when the box is clicked to type in the email the text dissapears
                     -the pattern breakdown: 
@@ -78,15 +78,18 @@
                     -  \. matches the .
                     -  ([a-z]+) represents one or more alphabetic characters after the .
                 -->
-                <input id="email" type="email" pattern=".+@.+\.([a-z]+)" placeholder="email..." name="email_input"/>
+                <input id="email" type="email" pattern=".+@.+\.([a-z]+)" size="30" placeholder="email..." name="email_input"/>
                 <br>
                 <br>
                 <!--Label for Contact preference-->
-                <label id="contact_preference_label" for="contact_preference">Contact Preference: </label>
-                <!--label for phone-->
-                <label id="phone_label" for="phone">Phone</label>
+                <label id="contact_preference_label" for="contact_preference"><b>Contact Preference:</b></label>
+                <!--label for phone radio input-->
+                <label id="phone_label" for="phone"><b>Phone</b></label>
+                <!-- phone radio input grouped with email radio-->
                 <input type="radio" id="phone" name="contact_preference"/>
-                <label id="email2_label" for="email2">Email</label>
+
+                <label id="email2_label" for="email2"><b>Email</b></label>
+                <!-- email radio input grouped with email phone-->
                 <input type="radio" id="email2" name="contact_preference"/>
                 <br>
                 <br>
@@ -94,11 +97,12 @@
                     -the for attribute from the label must match the id attribute. 
                     -if it matches then when the Desired Pets is clicked it will automatically select the option box.
                 -->
-                <label id="select_cake_label" for="category">Select Cake:</label>
+                <label id="select_cake_label" for="category"><b>Select Cake:</b></label>
                 <select id="category">
                     <option value="" >Select Cake</option>
                     <!--Wedding Category-->
                     <optgroup label="Wedding">
+                        <!--Options-->
                         <option value="wedding_cake">wedding_cake</option>
                         <option value="wedding_cake_2">wedding_cake_2</option>
                         <option value="wedding_cake_3">wedding_cake_3</option>
@@ -106,7 +110,7 @@
                     </optgroup>
                     <!-- Occasions Category -->
                     <optgroup label="Occasions">
-                    <!--Add Options-->
+                    <!--Options-->
                         <option value="anniversary_cake">anniversary_cake</option>
                         <option value="anniversary_cake_2">anniversary_cake_2</option>
                         <option value="anniversary_cake_3">anniversary_cake_3</option>
@@ -114,7 +118,7 @@
                     </optgroup>
                     <!--Luxury Category-->
                     <optgroup label="Luxury">
-                        <!--Add Options-->
+                        <!--Options-->
                         <option value="luxury_cake">luxury_cake</option>
                         <option value="luxury_cake_2">luxury_cake_2</option>
                         <option value="luxury_cake_3">luxury_cake_3</option>
@@ -122,7 +126,7 @@
                     </optgroup>
                     <!-- Desserts Category -->
                     <optgroup label="Desserts">
-                        <!--Add Options-->
+                        <!--Options-->
                         <option value="dessert">dessert</option>
                         <option value="dessert_2">dessert_2</option>
                         <option value="dessert_3">dessert_3</option>
@@ -130,6 +134,7 @@
                     </optgroup>
                     <!--Cupcake Category-->
                     <optgroup label="Cupcake">
+                        <!--Options-->
                         <option value="cupcake">cupcake</option>
                         <option value="cupcake_2">cupcake_2</option>
                         <option value="cupcake_3">cupcake_3</option>
@@ -137,7 +142,7 @@
                     </optgroup>
                     <!--Seasonal-->
                     <optgroup label="Seasonal">
-                        <!--Add Options-->
+                        <!--Options-->
                         <option value="christmas_cake">christmas_cake</option>
                         <option value="christmas_cake_2">christmas_cake_2</option>
                         <option value="christmas_cake_3">christmas_cake_3</option>
@@ -145,12 +150,12 @@
                     </optgroup>
                 </select>
                 <br>
-                
+                <br>
                 <!--Label for Additional Comments-->
-                <label id="comments_label" for="aditional_comments"><b>Additional Comments</b></label>
+                <label id="comments_label" for="aditional_comments"><b id="ad_com">Additional Comments</b></label>
                 <br>
                 <!--Text Area-->
-                <textarea id="aditional_comments" name="comments" cols="40" rows="10" placeholder="Aditional comments..."></textarea>
+                <textarea id="aditional_comments" name="comments" cols="54" rows="10" placeholder="Aditional comments..."></textarea>
                 <br>
                 <br>
                 <p class="terms_newsletter">
