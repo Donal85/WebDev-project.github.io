@@ -81,11 +81,13 @@
             <input id="email" type="email" pattern=".+@.+\.([a-z]+)" placeholder="email" name="email_input"/>
             <br>
             <br>
+            <!--Label for Contact preference-->
             <label id="contact_preference_label" for="contact_preference">Contact Preference: </label>
+            <!--label for phone-->
             <label id="phone_label" for="phone">Phone</label>
-            <input type="radio" id="phone" name="phone_radio_selector"/>
+            <input type="radio" id="phone" name="contact_preference"/>
             <label id="email2_label" for="email2">Email</label>
-            <input type="radio" id="email2" name="email_radio_selector"/>
+            <input type="radio" id="email2" name="contact_preference"/>
             <br>
             <br>
             <!--
@@ -95,21 +97,52 @@
             <label id="select_cake_label" for="select_cake">Select Cake:</label>
             <select id="category">
                 <option value="" >Select Cake</option>
+                <!--Wedding Category-->
+                <optgroup label="Wedding">
+                    <option value="wedding_cake">wedding_cake</option>
+                    <option value="wedding_cake_2">wedding_cake_2</option>
+                    <option value="wedding_cake_3">wedding_cake_3</option>
+                    <option value="wedding_cake_4">wedding_cake_4</option>
+                </optgroup>
                 <!-- Occasions Category -->
                 <optgroup label="Occasions">
+                <!--Add Options-->
                     <option value="anniversary_cake">anniversary_cake</option>
                     <option value="anniversary_cake_2">anniversary_cake_2</option>
                     <option value="anniversary_cake_3">anniversary_cake_3</option>
                     <option value="anniversary_cake_4">anniversary_cake_4</option>
                 </optgroup>
+                <!--Luxury Category-->
+                <optgroup label="Luxury">
+                    <!--Add Options-->
+                    <option value="luxury_cake">luxury_cake</option>
+                    <option value="luxury_cake_2">luxury_cake_2</option>
+                    <option value="luxury_cake_3">luxury_cake_3</option>
+                    <option value="luxury_cake_4">luxury_cake_4</option>
+                </optgroup>
                 <!-- Desserts Category -->
                 <optgroup label="Desserts">
+                    <!--Add Options-->
                     <option value="dessert">dessert</option>
-                    
-                    <!-- Add more options as needed -->
+                    <option value="dessert_2">dessert_2</option>
+                    <option value="dessert_3">dessert_3</option>
+                    <option value="dessert_4">dessert_4</option>
                 </optgroup>
-                
-                <!-- Add more categories as needed -->
+                <!--Cupcake Category-->
+                <optgroup label="Cupcake">
+                    <option value="cupcake">cupcake</option>
+                    <option value="cupcake_2">cupcake_2</option>
+                    <option value="cupcake_3">cupcake_3</option>
+                    <option value="cupcake_4">cupcake_4</option>
+                </optgroup>
+                <!--Seasonal-->
+                <optgroup label="Seasonal">
+                    <!--Add Options-->
+                    <option value="christmas_cake">christmas_cake</option>
+                    <option value="christmas_cake_2">christmas_cake_2</option>
+                    <option value="christmas_cake_3">christmas_cake_3</option>
+                    <option value="christmas_cake_4">christmas_cake_4</option>
+                </optgroup>
             </select>
     
             <br>
@@ -131,53 +164,30 @@
             <button id="cake_button" type="submit">Submit</button>
         </form>
 
-        <form action="#">
-            <label for="category">Select a Category:</label>
-            <select id="category">
-                <option value="" selected disabled>Select an option</option>
-                
-                <!-- Occasions Category -->
-                <optgroup label="Occasions">
-                    <option value="birthday">Birthday</option>
-                    <option value="wedding">Wedding</option>
-                    <!-- Add more options as needed -->
-                </optgroup>
     
-                <!-- Desserts Category -->
-                <optgroup label="Desserts">
-                    <option value="chocolate">Chocolate</option>
-                    <option value="vanilla">Vanilla</option>
-                    <!-- Add more options as needed -->
-                </optgroup>
-                
-                <!-- Add more categories as needed -->
-            </select>
-    
-         
-        </form>
     <!--Creates a bootstrap footer with 1 row and 1 column-->
-<div class="row">
-    <div class="col-sm-12">
-        <footer class="footer">
-            <p class="social">Socials:</p>
-            <!--Social media links anchor tagged to the particular websites
-            Social media links would reference the users profile on a real site instead the links are set to each sites home page-->
-            <!--Image credit https://www.facebook.com-->
-            <a href="https://www.facebook.com"><img src="images/icons/facebook.png" alt="facebook logo"></a>
-            <!--Image credit https://www.instagram.com-->
-            <a href="https://www.instagram.com"><img src="images/icons/instagram.png" alt="instagram logo"></a>
-            <!--Image credit https://www.x.com-->
-            <a href="https://www.x.com"><img src="images/icons/x.png" alt="X formally twitter logo"></a>
-            <!--Image credit https://www.ticktok.com-->
-            <a href="https://www.tiktok.com"><img src="images/icons/tiktok.png" alt="tiktok logo"></a>
-            <!---->
-            <div id="copyright">
-                <p class="copy"><span class="rights">All rights reserved</span> ©XMLVC</p>
+        <div class="row">
+            <div class="col-sm-12">
+                <footer class="footer">
+                    <p class="social">Socials:</p>
+                    <!--Social media links anchor tagged to the particular websites
+                    Social media links would reference the users profile on a real site instead the links are set to each sites home page-->
+                    <!--Image credit https://www.facebook.com-->
+                    <a href="https://www.facebook.com"><img src="images/icons/facebook.png" alt="facebook logo"></a>
+                    <!--Image credit https://www.instagram.com-->
+                    <a href="https://www.instagram.com"><img src="images/icons/instagram.png" alt="instagram logo"></a>
+                    <!--Image credit https://www.x.com-->
+                    <a href="https://www.x.com"><img src="images/icons/x.png" alt="X formally twitter logo"></a>
+                    <!--Image credit https://www.ticktok.com-->
+                    <a href="https://www.tiktok.com"><img src="images/icons/tiktok.png" alt="tiktok logo"></a>
+                    <!---->
+                    <div id="copyright">
+                        <p class="copy"><span class="rights">All rights reserved</span> ©XMLVC</p>
+                    </div>
+                </footer>
             </div>
-        </footer>
-    </div>
-</div>
-       
+        </div>
+            
     
 
 </body>
