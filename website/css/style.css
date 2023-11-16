@@ -112,7 +112,7 @@ header{
 
 
 
-/*Contact form styling*/
+/*CONTACT FORM STYLING*/
 #form{
     border: #000000 solid 1px;
     width: 20%;
@@ -156,7 +156,7 @@ label {
 button {
     width: 100px;
     padding: 5px;
-    border-radius: 20px;
+    border-radius: 10px;
     border-color: goldenrod;
 }
 /* set the margin to 0 for terms and newsletter paragraph*/
