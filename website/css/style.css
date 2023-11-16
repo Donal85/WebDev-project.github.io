@@ -152,12 +152,14 @@ label {
 #category {
     width: 110px;
 }
+/* style the button */ 
 button {
     width: 100px;
     padding: 5px;
     border-radius: 20px;
     border-color: goldenrod;
 }
+/* set the margin to 0 for terms and newsletter paragraph*/
 .terms_newsletter {
     margin: 0px;
 }
