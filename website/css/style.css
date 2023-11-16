@@ -109,3 +109,55 @@ header{
     margin-right: 150px;
     text-align: center;
 }
+
+
+
+/*Contact page styling*/
+#form{
+    border: #000000 solid 1px;
+    width: 20%;
+    border-radius: 5px;
+    padding: 10px;
+    display: inline-block;
+}
+#contact {
+    margin: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+}
+label{
+    width: 120px;
+    display: inline-flex;
+    padding: 2px;
+}
+#contact_preference_label{
+    display: inline;
+}
+#phone_label{
+    display: inline;
+}
+#phone{
+    display: inline;
+}
+#email2_label{
+    display: inline;
+}
+#email2{
+    display: inline;
+}
+#phone_label{
+    display: inline;
+}
+/* set the width of cake option goup */
+#category {
+    width: 110px;
+}
+button {
+    width: 100px;
+    padding: 5px;
+    border-radius: 20px;
+    border-color: goldenrod;
+}
+p{
+    margin: 0px;
+}
