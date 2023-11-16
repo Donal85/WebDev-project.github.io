@@ -117,6 +117,7 @@ header{
    display: flex;
    justify-content:center;
 }
+/* form border, border-radius, padding and text alignment */
 #form {
     border: #000000 solid 1px;
     width: 440px;
@@ -124,6 +125,7 @@ header{
     padding: 10px;
     text-align: left;
 }
+/* this is the form h3 title Get in Contact */
 #contact {
     text-align: center;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
