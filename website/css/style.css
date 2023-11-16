@@ -113,12 +113,16 @@ header{
 
 
 /*CONTACT FORM STYLING*/
-#form{
+#div_form {
+   display: flex;
+   justify-content:center;
+}
+#form {
     border: #000000 solid 1px;
-    width: 20%;
+    width: 340px;
     border-radius: 5px;
     padding: 10px;
-    display: inline-block;
+    text-align: left;
 }
 #contact {
     margin: 0;
@@ -130,7 +134,7 @@ label {
     display: inline-flex;
     padding: 2px;
 }
-#contact_preference_label {
+#contact_preference_label  {
     display: inline;
 }
 #phone_label {
@@ -147,17 +151,22 @@ label {
 }
 #phone_label {
     display: inline;
+   
 }
 /* set the width of cake option goup */
 #category {
     width: 110px;
 }
-/* style the button */ 
+/* style the buttons */ 
 button {
     width: 100px;
     padding: 5px;
     border-radius: 10px;
     border-color: goldenrod;
+    text-align: center;
+    font-weight: 700;
+    display: block;
+    margin: 0 auto;/* position the button in the middle of the form */
 }
 /* set the margin to 0 for terms and newsletter paragraph*/
 .terms_newsletter {

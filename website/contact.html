@@ -17,7 +17,7 @@
         <!--Links to js script sheet-->
         <script defer src="script/script.js"></script>
     </head>
-    <body>
+    <body id="body_contact">
         <header>
             <!--Creates a Bootstrap header with 1 row and 1 column-->
             <div class="row">
@@ -48,7 +48,7 @@
                 <li class="infolink"><a class="current" href="contact.html">Contact-Info</a></li>
             </ul>
         </nav>
-        <div>
+        <div id="div_form">
             <form id="form" action="" name="cake order form">
                 <h3 id="contact">Get in Contact</h3>
                 <br>
@@ -56,17 +56,17 @@
                     will be automaticaly selected -->
                 <label id="name_label" for="name">Name:</label>
                 <!--required means the field must NOTs be left empty-->
-                <input id="name" type="text" minlength="3" maxlength="20" placeholder="name" required/>
+                <input id="name" type="text" minlength="3" maxlength="20" placeholder="name..." required/>
                 <br>
                 <label id="address_label" for="address">Address:</label>
-                <input id="address" type="text" placeholder="address" required/>
+                <input id="address" type="text" placeholder="address..." required/>
                 <br>
                 <label id="phone_number_label" for="phone_number">Phone Number:</label>
                 <!-- 
                     -the pattern allow us to input 10 digit phone number including area code, ex: ###-###-####
                     -because the task is asking me to have a maximum of 10 digit input I will remove the dashes "-" from the pattern  
                     -I could also add spaces instead of dashes for more clear reading of the phone number-->
-                <input id="phone_number" type="tel" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" name="phone_input" maxlength="10" minlength="10" placeholder="phone number" required/>
+                <input id="phone_number" type="tel" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" name="phone_input" maxlength="10" minlength="10" placeholder="phone number..." required/>
                 <br>
                 <label id="email_label" for="email">Email:</label>
                 <!--
@@ -78,7 +78,7 @@
                     -  \. matches the .
                     -  ([a-z]+) represents one or more alphabetic characters after the .
                 -->
-                <input id="email" type="email" pattern=".+@.+\.([a-z]+)" placeholder="email" name="email_input"/>
+                <input id="email" type="email" pattern=".+@.+\.([a-z]+)" placeholder="email..." name="email_input"/>
                 <br>
                 <br>
                 <!--Label for Contact preference-->
@@ -94,7 +94,7 @@
                     -the for attribute from the label must match the id attribute. 
                     -if it matches then when the Desired Pets is clicked it will automatically select the option box.
                 -->
-                <label id="select_cake_label" for="select_cake">Select Cake:</label>
+                <label id="select_cake_label" for="category">Select Cake:</label>
                 <select id="category">
                     <option value="" >Select Cake</option>
                     <!--Wedding Category-->
@@ -145,12 +145,12 @@
                     </optgroup>
                 </select>
                 <br>
-                <br>
+                
                 <!--Label for Additional Comments-->
                 <label id="comments_label" for="aditional_comments"><b>Additional Comments</b></label>
                 <br>
                 <!--Text Area-->
-                <textarea id="aditional_comments" name="comments" cols="30" rows="10" placeholder="Aditional comments..."></textarea>
+                <textarea id="aditional_comments" name="comments" cols="40" rows="10" placeholder="Aditional comments..."></textarea>
                 <br>
                 <br>
                 <p class="terms_newsletter">
