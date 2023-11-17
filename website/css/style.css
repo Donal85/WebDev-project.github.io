@@ -1,3 +1,5 @@
+/*---------------Donal Dempsey styling---------------------------*/
+
 header{
     background-color: rgb(241, 208, 213);
 }
@@ -87,12 +89,16 @@ header{
     margin-right: 30%;
 }
 
+/*Hides the minigame until called by button click*/
 #minigame {
+    display: none;
+}
+
+/*Aligns everything within the game div to centre*/
+#game{
     text-align: center;
 }
-#start{
-    display: inline-block;
-}
+
 .footer img{
     float: left;
     width: 2%;
@@ -110,7 +116,7 @@ header{
     text-align: center;
 }
 
-
+/*----------------------Flaviu Vanca stylying--------------------*/
 
 /*CONTACT FORM STYLING*/
 #div_form {
