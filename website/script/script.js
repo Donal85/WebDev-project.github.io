@@ -20,7 +20,7 @@ function startGame() {
     // Set's the number of attempts a user has to guess the number
     attemptsLeft = 3;
     // Display's message to user explaning the rules and the game
-    document.getElementById('result').innerHTML = 'You have 3 trys at guessing the number I have selected between 1-10';
+    document.getElementById('result').innerHTML = "I have randomly selected a number between 1-10<br>you have 3 attempts to guess it!";
     // Shows the user how many attempts they have left
     document.getElementById('attempts').textContent = attemptsLeft;
     }
