@@ -1,5 +1,9 @@
 /*---------------Donal Dempsey styling---------------------------*/
 
+body{
+    background-image: url('/website/images/backgrounds/Christmas1.jpg');
+}
+
 header{
     background-color: rgb(241, 208, 213);
 }
@@ -77,16 +81,14 @@ header{
 .infolink :hover{
     color: gold;
 }
-#cake1{
-    width: 60%;
-    margin-left: 20%;
+.img{
+    width: 90%;
+    box-sizing: border-box;
+    padding: 40px;
 }
-
-#cake2{
-    width: 60%;
-    height: 70%;
-    margin-left: 20%;
-    margin-right: 30%;
+.cake{
+    width: 100%;
+    height: 400px;
 }
 
 /*Hides the minigame until called by button click*/
@@ -116,10 +118,7 @@ header{
     text-align: center;
 }
 
-#seasonal{
 
-    background-image: url(/website/images/backgrounds/Christmas1.jpg);
-}
 
 /*----------------------Flaviu Vanca stylying--------------------*/
 
