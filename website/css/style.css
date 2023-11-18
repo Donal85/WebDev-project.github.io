@@ -255,3 +255,13 @@ button {
 /* END CONTACT FORM STYLING */
 
 /* Dessert Styling*/
+.carousel-item {
+    margin-left: 8%;
+    margin-right: 8%;
+   
+}
+.imgs {
+    
+    border: goldenrod solid 2px;
+    border-radius: 20px;
+}
