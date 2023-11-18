@@ -150,6 +150,13 @@ label {
     display: inline;
     margin-right: 20px;
 }
+#email_label {
+    margin-left: 5px;
+    margin-right: -5px;
+}
+#contact_preference_label {
+    margin-left: 5px;
+}
 #phone_label {
     display: inline;
 }
@@ -165,6 +172,7 @@ label {
 }
 #comments_label {
     display: inline;
+    margin-left: 5px;
 }
 /* set the width of cake option goup */
 #category {
@@ -182,7 +190,12 @@ button {
     margin: 0 auto;/* position the button in the middle of the form */
 }
 /* set the margin to 0 for terms and newsletter paragraph*/
-.terms_newsletter {
+.terms_newsletter  {
     margin: 0px;
 }
+/* arrange the phrase to be on the same line wiht the above phrase (Terms and Conditions)*/
+#newletter_b {
+    margin-left: 5px;
+}
+
 /* END CONTACT FORM STYLING */

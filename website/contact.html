@@ -53,22 +53,26 @@
                 <h3 id="contact">Get in Contact</h3>
                 <br>
                 <!--the for attribute is for when we click the Name literal the input wich is referenced 
-                    will be automaticaly selected -->
-                <label id="name_label" for="name"><b>Name:</b></label>
+                    will be automaticaly selected 
+                    -use superscript tag for * to represent the mandatory field
+                -->
+                <label id="name_label" for="name"><b><sup>*</sup>Name:</b></label>
                 <!--required means the field must NOTs be left empty-->
                 <input id="name" type="text" minlength="3" maxlength="200" size="30" placeholder="name..." required/>
                 <br>
-                <label id="address_label" for="address"><b>Address:</b></label>
+                <!--use superscript tag for * to represent the mandatory field -->
+                <label id="address_label" for="address"><b><sup>*</sup>Address:</b></label>
                 <input id="address" type="text" size="30" placeholder="address..." required/>
                 <br>
-                <label id="phone_number_label" for="phone_number"><b>Phone Number:</b></label>
+                <!--use superscript tag for * to represent the mandatory field -->
+                <label id="phone_number_label" for="phone_number"><b><sup>*</sup>Phone Number:</b></label>
                 <!-- 
                     -the pattern allow us to input 10 digit phone number including area code, ex: ###-###-####
                     -because the task is asking me to have a maximum of 10 digit input I will remove the dashes "-" from the pattern  
                     -I could also add spaces instead of dashes for more clear reading of the phone number-->
                 <input id="phone_number" type="tel" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" name="phone_input" maxlength="10" minlength="10" size="30" placeholder="phone number..." required/>
                 <br>
-                <label id="email_label" for="email"><b>Email:</b></label>
+                <label id="email_label" for="email"><b> Email:</b></label>
                 <!--
                     -placeholder is a temporary text displayed in the box, when the box is clicked to type in the email the text dissapears
                     -the pattern breakdown: 
@@ -97,7 +101,7 @@
                     -the for attribute from the label must match the id attribute. 
                     -if it matches then when the Desired Pets is clicked it will automatically select the option box.
                 -->
-                <label id="select_cake_label" for="category"><b>Select Cake:</b></label>
+                <label id="select_cake_label" for="category"><b><sup>*</sup>Select Cake:</b></label>
                 <select id="category">
                     <option value="" >Select Cake</option>
                     <!--Wedding Category-->
@@ -161,13 +165,17 @@
                 <p class="terms_newsletter">
                     <!--Terms and Conditions-->
                     <input id="terms_conditions" type="checkbox" name="tc" required/>
-                    <b>Terms And Conditions</b>
+                    <b><sup>*</sup>Terms And Conditions</b>
                 </p>
                 <p class="terms_newsletter">
                     <!--Subscribe to Monthly Newsletter-->
                     <input id="newsletter" type="checkbox" name="tc"/>
-                    <b>Subscribe to Monthly Newsletter</b>
+                    <b id="newletter_b">Subscribe to Monthly Newsletter</b>
                 </p>
+                <br>
+                <!--use superscript tag for * to represent the mandatory field -->
+                <span><em><sup>*</sup>mandatory</em></span>
+                <br>
                 <br>
                 <!--Button to Submit the  form-->
                 <button id="cake_button" type="submit">Submit</button>
