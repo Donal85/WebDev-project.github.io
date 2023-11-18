@@ -1,8 +1,8 @@
 /*---------------Donal Dempsey styling---------------------------*/
 
-body{
+body {
     background-image: url('/website/images/backgrounds/Christmas1.jpg');
-}
+} 
 
 header{
     background-color: rgb(241, 208, 213);
@@ -200,7 +200,3 @@ button {
 /* END CONTACT FORM STYLING */
 
 /* Dessert Styling*/
-#dessert_body {
-    /* background-image: url("/website/images/cakes/cupcake.jpg"); */
-    background-image: url("\\website\\images\\backgrounds\\Christmas.jpg");
-}
