@@ -36,22 +36,22 @@ function checkGuess() {
         attemptsLeft--;
 
         // Check's if the users guess is correct and displays the message if it is (will also call the endGame function if user is correct)
-        if (userGuess == randomNumber) {
-            document.getElementById('result').innerHTML = "SUCCESS! " +randomNumber+ " is the correct number!";
+        if (userGuess === randomNumber) {
+            document.getElementById('result').innerHTML = "SUCCESS! <br>" +randomNumber+ " is the correct number!";
             endGame();
         } 
         else {
             // works out and tells the user whether their guess is too high or too low (if the statement is true, too low is displayed otherwise, too high is displayed)
             message = userGuess < randomNumber ? 'too low!' : 'too high!';
-            document.getElementById('result').innerHTML = "Incorrect guess! "+userGuess+ " is " +message+ " You have " +attemptsLeft+ " attempt(s) left: " ;
+            document.getElementById('result').innerHTML = "Incorrect guess! "+userGuess+ " is " +message+ "<br>You have " +attemptsLeft+ " attempt(s) left: " ;
         }
 
         // Updates the attempts display to show the user how many trys they have left
         document.getElementById('attempts').textContent = attemptsLeft;
 
         // Check's if the user is out of try's and displays the message if so (will also call the endGame function if user is out of trys)
-        if (attemptsLeft == 0) {
-                document.getElementById('result').innerHTML ="Oh no! You're out of luck! The correct number was: " +randomNumber;
+        if (attemptsLeft == 0 && userGuess !== randomNumber) {
+                document.getElementById('result').innerHTML ="Oh no! You're out of luck!<br>The correct number was: " +randomNumber;
                 endGame();
         }
     }
@@ -59,6 +59,8 @@ function checkGuess() {
 
 // Shows the "Play Again" button after the game has finished
 function endGame() {
+    document.getElementById('enterGuess').style.display = 'none';
+    document.getElementById('guessInput').style.display = 'none';
     document.getElementById('playAgainButton').style.display = 'inline';
 }
         
@@ -67,6 +69,8 @@ function playAgain() {
     document.getElementById('start').style.display = 'inline';
     document.getElementById('minigame').style.display = 'none';
     document.getElementById('playAgainButton').style.display = 'none';
+    document.getElementById('enterGuess').style.display = 'inline';
+    document.getElementById('guessInput').style.display = 'inline';
     document.getElementById('result').innerHTML = '';
     document.getElementById('attempts').textContent = '';
     document.getElementById('guessInput').value = '';
