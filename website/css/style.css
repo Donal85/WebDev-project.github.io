@@ -194,6 +194,7 @@ button {
 .terms_newsletter  {
     margin: 0px;
 }
+/* arrange the phrase to be on the same line wiht the above phrase (Terms and Conditions)*/
 #newletter_b {
     margin-left: 5px;
 }
