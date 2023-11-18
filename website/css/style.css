@@ -1,18 +1,51 @@
-/*---------------Donal Dempsey styling---------------------------*/
+/* copied fonts from google
+font-family: 'Dancing Script', cursive;
+font-family: 'Fjalla One', sans-serif;
+font-family: 'Manrope', sans-serif;
+font-family: 'Overpass', sans-serif;
+font-family: 'UnifrakturMaguntia', cursive;
+ */
 
-body {
-    background-image: url('/website/images/backgrounds/Christmas1.jpg');
-} 
+/*---------------Donal Dempsey STUDENT ID: 23122200 styling---------------------------*/
 
+/*Sets the backgroung color of the body in all pages*/
+body{
+    background-color: aliceblue;
+}
+
+/*START HEADER STYLE*/
+/*Sets the backgroung color of the header*/
 header{
     background-color: rgb(241, 208, 213);
 }
+/*Sets the text style and position of the text within the header*/
 .title{
     text-align: center;
     margin-right: 1%;
 }
 
-/*set the logo */
+/*Sets the size and style of the h1 text*/
+header h1 {
+    font-size: 65px;
+    font-weight: 600;
+    margin-right: 3%;
+    background-image: linear-gradient(to left, #5736b1, #b393d3);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+/*Sets the size and style of the h1 text*/
+header h2 {
+    font-size: 36px;
+    font-weight: 600;
+    background-image: linear-gradient(to left, #5736b1, #b393d3);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+/*sets the style, size and position of the logo within the header */
 #logo {
     display: inline-flex;
     float: left;
@@ -20,7 +53,9 @@ header{
     margin-top: 1%;
     margin-left: 1%;
 }
+/*End OF HEADER STYLES*/
 
+/*START OF NAV BAR STYLES*/
 /*Sets the style, height, margin, padding and colour of the nav bar*/
 .navbar {
     margin: 0;
@@ -28,7 +63,7 @@ header{
     overflow: hidden;
 }
 
-/*remove the bullets from ul*/
+/*removes all styling from the nav bar list, adds a background color and sets the width of the Nav bar*/
 .bar {
     list-style-type: none;
     width: 100%;
@@ -77,18 +112,33 @@ header{
     text-decoration: none;
 }
 
-/*Causes the text of the contact link within the navbar to change to gold and the background to change to black on mouse over*/
+/*Causes the text of the contact link within the navbar to change to gold on mouse over*/
 .infolink :hover{
     color: gold;
 }
-.img{
-    width: 90%;
-    box-sizing: border-box;
-    padding: 40px;
-}
+/*END OF NAV BAR STYLES*/
+
+
+/*START OF MAIN CONTENT STYLING*/
+
+/*Sets the size and position of the images within the carousel div*/
 .cake{
-    width: 100%;
-    height: 400px;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+    height: 550px;
+}
+
+#intro {
+    text-align: center;
+}
+
+#welcome {
+    font-size: 30px;
+}
+
+#intro p{
+    font-size: 26px;
 }
 
 /*Hides the minigame until called by button click*/
@@ -118,7 +168,12 @@ header{
     text-align: center;
 }
 
-
+/*Adds a background to the seasonal page, <main> tag used with an id to disguish between the different pages*/
+/*--Image credit-- <a href="https://unsplash.com/@amyshamblen?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Amy Shamblen</a>
+ on <a href="https://unsplash.com/photos/green-and-red-baubles-x2lm26Rs2PM?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>*/
+#seasonal {
+    background-image: url("../images/backgrounds/christmas1.jpg");
+}
 
 /*----------------------Flaviu Vanca stylying--------------------*/
 
