@@ -256,12 +256,11 @@ button {
 
 /* Dessert Styling*/
 .carousel-item {
-    margin-left: 8%;
-    margin-right: 8%;
-   
+    position:relative;
+    text-align: center;
 }
-.imgs {
-    
+.imgs {    
     border: goldenrod solid 2px;
     border-radius: 20px;
+    height: 550px;   
 }
