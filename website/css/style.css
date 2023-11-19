@@ -120,27 +120,45 @@ header h2 {
 
 
 /*START OF MAIN CONTENT STYLING*/
+/*Sets the position of the text within intro*/
+#intro {
+    text-align: center;
+}
+/*Sets the size of the text <p> within intro*/
+#intro p{
+    font-size: 26px;
+}
+/*Sets the size of the text for #welcome*/
+#welcome {
+    font-size: 30px;
+}
 
+/*Sets the size and position of the images to the left and right of the carousel*/
+.home{
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+    height: 80%;
+}
 /*Sets the size and position of the images within the carousel div*/
 .cake{
+    margin-top: 5%;
     margin-left: 5%;
     margin-right: 5%;
     width: 90%;
     height: 550px;
 }
 
-#intro {
+.tag{
     text-align: center;
-}
-
-#welcome {
     font-size: 30px;
 }
 
-#intro p{
-    font-size: 26px;
+/*--Image credit-- <a href="https://unsplash.com/@markusspiske?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Markus Spiske</a> on <a href="https://unsplash.com/photos/matrix-movie-still-iar-afB0QQw?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a> */
+#game{
+    background-image: url("../images/backgrounds/numbers.jpg");
+    background-size: 300px 100px;
 }
-
 /*Hides the minigame until called by button click*/
 #minigame {
     display: none;
@@ -149,6 +167,7 @@ header h2 {
 /*Aligns everything within the game div to centre*/
 #game{
     text-align: center;
+    color: white;
 }
 
 .footer img{
