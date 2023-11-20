@@ -1,5 +1,5 @@
 //------------------Donal Dempsey script----------------------
-//Mini game script
+//START MINI GAME SCRIPT
 
 //Declares variables 
 var randomNumber;
@@ -77,3 +77,26 @@ function playAgain() {
 }
 
 //End of mini game script
+//START OF TEXT OVER IMAGES SCRIPT
+
+
+function show() {
+  var welcome = document.getElementById('insert');
+  welcome.style.display = '';
+}
+
+function hide() {
+  var welcome = document.getElementById('insert');
+  welcome.style.display = 'none';
+}
+function init() {
+  var surround = document.getElementById('text');
+  surround.onmouseover = show;
+  surround.onmouseout=hide;  
+}
+
+window.onload = init;   
+
+
+
+
