@@ -249,7 +249,7 @@ header h2 {
 }
 
 
-/*----------------------Flaviu Vanca stylying--------------------*/
+/*----------------------Flaviu Vanca Student ID:22195092 - Stylying--------------------*/
 
 /*CONTACT FORM STYLING*/
 #div_form {
@@ -264,7 +264,7 @@ header h2 {
     padding: 10px;
     text-align: left;
 }
-/* this is the form h3 title Get in Contact */
+/* this is the form h3 title Order-Form */
 #contact {
     text-align: center;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
@@ -328,32 +328,46 @@ button {
 }
 /* END CONTACT FORM STYLING */
 
-/* Dessert Styling*/
+/* style the carousel images */
 .carousel-item {
     position:relative;
     text-align: center;
 }
+/* set the images to a hight of 550px */
 .imgs {    
     border: goldenrod solid 2px;
     border-radius: 20px;
     height: 550px;   
 }
 /* STYLE THE PREVIOUS AND NEXT SLIDE ICONS*/
+/* set width and height, border radius and color */
 .carousel-control-prev-icon {
     border-radius: 50px;
     width: 40px;
     height: 50px;    
     background-color: rgb(94, 94, 193);
 }
+/* give the next icon a goldenrod box shadow */
 .carousel-control-prev-icon:hover {
    box-shadow: goldenrod 0px 0px 2px 2px;
 }
+/* set width and height, border radius and color */
 .carousel-control-next-icon {
     border-radius: 50px;
     width: 40px;
     height: 50px;    
     background-color: rgb(94, 94, 193);
 }
+/* give the next icon a goldenrod box shadow */
 .carousel-control-next-icon:hover {
    box-shadow: goldenrod 0px 0px 2px 2px;
+}
+
+/* */
+#wedding_body {
+    /*
+    Image by <a href="https://pixabay.com/users/motionstock-13298494/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5382614">motionstock</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5382614">Pixabay</a>
+    https://pixabay.com/illustrations/hearts-blue-love-valentines-sky-5382614/
+    */
+    background-image: url("../images/backgrounds/hearts_wallpaper.jpg");
 }
