@@ -250,7 +250,9 @@ header h2 {
 
 /*Java inserted text styling*/
 
-
+#insert{
+    display: none;
+}
 
 /*----------------------Flaviu Vanca Student ID:22195092 - Stylying--------------------*/
 
