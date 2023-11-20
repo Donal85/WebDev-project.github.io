@@ -81,7 +81,7 @@ function playAgain() {
 
 
 function show() {
-  var welcome = document.getElementById('insert');
+  var welcome = document.getElementById('insert').style.display = 'inline';
   welcome.style.display = '';
 }
 
@@ -92,7 +92,7 @@ function hide() {
 function init() {
   var surround = document.getElementById('text');
   surround.onmouseover = show;
-  surround.onmouseout=hide;  
+  surround.onmouseout = hide;  
 }
 
 window.onload = init;   
