@@ -18,97 +18,128 @@
     <script defer src="script/script.js"></script>
 </head>
 <body>
-    <main id="seasonal">
+  <main id="seasonal">
     <header>
-    <!--Creates a Bootstrap header with 1 row and 1 column-->
-    <div class="row">
+      <!--Creates a Bootstrap header with 1 row and 1 column-->
+      <div class="row">
         <div class="col-sm-12">
-            <!--Image credit Flaviu Vanca-->
-            <a c href="index.html"><img id="logo" src="images/logo/logo3.png" alt="logo"></a>
-            <div class="title">
-                <h1><em>Pastry Paradise!</em></h1><br>
-                <h2>Best Cakes In <em>Ireland!</em></h2>
-            </div>
+          <!--Image credit Flaviu Vanca-->
+          <a c href="index.html"><img id="logo" src="images/logo/logo3.png" alt="logo"></a>
+          <div class="title">
+            <h1><em>Pastry Paradise!</em></h1><br>
+            <h2>Best Cakes In <em>Ireland!</em></h2>
+          </div>
         </div>
       </div>
-        <br>
+      <br>
     </header>
     <!--Creates navbar and anchor links to the other website pages-->
     <nav class="navbar">
-        <!--An un-ordered list is used to create the links for the navbar, anchor tag used to reference all other pages of the site-->
-        <ul class="bar">
-            <li class="links"><a href="index.html">Home</a></li>
-            <li class="links"><a href="occasions.html">Occasions</a></li>
-            <li class="links"><a href="luxury.html">Luxury</a></li>
-            <li class="links"><a href="wedding.html">Weddings</a></li>
-            <!--The current tag will highlight to user which page they are on-->
-            <li class="links"><a class="current" href="seasonal.html">Seasonal</a></li>
-            <li class="links"><a href="dessert.html">Desserts</a></li>
-            <li class="links"><a href="cupcakes.html">Cup-Cakes</a></li>
-            <!--The contact tag will bring the user to the contact information on the home page-->
-            <li class="infolink"><a href="contact.html">Contact-Info</a></li>
-        </ul>
+      <!--An un-ordered list is used to create the links for the navbar, anchor tag used to reference all other pages of the site-->
+      <ul class="bar">
+        <li class="links"><a href="index.html">Home</a></li>
+        <li class="links"><a href="occasions.html">Occasions</a></li>
+        <li class="links"><a href="luxury.html">Luxury</a></li>
+        <li class="links"><a href="wedding.html">Weddings</a></li>
+        <!--The current tag will highlight to user which page they are on-->
+        <li class="links"><a class="current" href="seasonal.html">Seasonal</a></li>
+        <li class="links"><a href="dessert.html">Desserts</a></li>
+        <li class="links"><a href="cupcakes.html">Cup-Cakes</a></li>
+        <!--The contact tag will bring the user to the order form page-->
+        <li class="infolink"><a href="contact.html">Order-Form</a></li>
+      </ul>
     </nav>
-
-      <!--Bootsrtap carousel -->
-      <div id="carouselExampleIndicators" class="carousel slide">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img class="imgs" src="images/cakes/christmas_cake.jpg" class="d-block w-100" alt="lemon_cake">
-          </div>
-          <div class="carousel-item">
-            <img class="imgs" src="images/cakes/christmas_cake_2.jpg" class="d-block w-100" alt="custard_fruit_mix">
-          </div>
-          <div class="carousel-item">
-            <img class="imgs" src="images/cakes/christmas_cake_3.jpg" class="d-block w-100" alt="sweet_flowers">
-          </div>
-          <div class="carousel-item">
-            <img class="imgs" src="images/cakes/christmas_cake_4.jpg" class="d-block w-100" alt="triple_berris">
-          </div>
-          <!--Image credit-- <a href="https://unsplash.com/@photos_by_lanty?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Photos by Lanty</a> on <a href="https://unsplash.com/photos/focus-photo-of-white-icing-covered-4-tier-cake-kf2-m99ZvKE?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a> -->
-          <div class="carousel-item">
-            <img class="imgs" src="images/cakes/christmas wedding.jpg" class="d-block w-100" alt="Christmas wedding cake">
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+    <div class="row">
+      <div class="col-sm-4 ">
+        <!-- Image credit -- <a href="https://unsplash.com/@edwardhowellphotography?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Edward Howell</a> on <a href="https://unsplash.com/photos/brown-cookies-on-white-table-85WrJeLS-aQ?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a> -->
+        <img class="side" src="images/pics/Christmas side1.jpg" alt="Christmas Scene">
+        <br><br>
       </div>
-
-<!--Creates a bootstrap footer with 1 row and 1 column-->
-<div class="row">
-    <div class="col-sm-12">
-        <footer class="footer">
-            <p class="social">Socials:</p>
-            <!--Social media links anchor tagged to the particular websites
-            Social media links would reference the users profile on a real site instead the links are set to each sites home page-->
-            <!--Image credit https://www.facebook.com-->
-            <a href="https://www.facebook.com"><img src="images/icons/facebook.png" alt="facebook logo"></a>
-            <!--Image credit https://www.instagram.com-->
-            <a href="https://www.instagram.com"><img src="images/icons/instagram.png" alt="instagram logo"></a>
-            <!--Image credit https://www.x.com-->
-            <a href="https://www.x.com"><img src="images/icons/x.png" alt="X formally twitter logo"></a>
-            <!--Image credit https://www.ticktok.com-->
-            <a href="https://www.tiktok.com"><img src="images/icons/tiktok.png" alt="tiktok logo"></a>
-            <!---->
-            <div id="copyright">
-                <p class="copy"><span class="rights">All rights reserved</span> ©XMLVC</p>
+      <div class="col-sm-4">
+        <!--Bootsrtap carousel -->
+        <div id="indicators" class="carousel slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#indicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#indicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#indicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#indicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#indicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            <button type="button" data-bs-target="#indicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+            <button type="button" data-bs-target="#indicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <!-- Image credit-- <a href="https://unsplash.com/@rdiazcaris?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Ricardo Díaz</a> on <a href="https://unsplash.com/photos/brown-cookies-on-white-and-brown-polka-dot-ceramic-plate-xgkyGRwdMQI?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a> -->
+              <img class="season" src="images/cakes/christmas cake.jpg" class="d-block w-100" alt="Christmas cake">
             </div>
+            <div class="carousel-item">
+              <!-- Image credit <a href="https://unsplash.com/@kikimora33?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Kate Laine</a> on <a href="https://unsplash.com/photos/brown-and-white-chocolate-cake-2Y_C_i9S6Pw?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a> -->
+              <img class="season" src="images/cakes/Orange cake.jpg" class="d-block w-100" alt="Orange cake">
+            </div>
+            <div class="carousel-item">
+              <!-- mage credit-- <a href="https://unsplash.com/@henry_be?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Henry Be</a> on <a href="https://unsplash.com/photos/chocolate-cake-_y5CCcYWTjU?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a> -->
+              <img class="season" src="images/cakes/christmas sponge.jpg" class="d-block w-100" alt="Christmas sponge">
+            </div>
+            <div class="carousel-item">
+              <!-- Image credit-- <a href="https://unsplash.com/@dilja96?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Diliara Garifullina</a> on <a href="https://unsplash.com/photos/red-and-white-floral-round-ornament-MOAi0WIcc9k?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a> -->
+              <img class="season" src="images/cakes/Christmas macarons.jpg" class="d-block w-100" alt="Christmas Macarons">
+            </div>
+            <!--Image credit-- <a href="https://unsplash.com/@photos_by_lanty?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Photos by Lanty</a> on <a href="https://unsplash.com/photos/focus-photo-of-white-icing-covered-4-tier-cake-kf2-m99ZvKE?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a> -->
+            <div class="carousel-item">
+              <img class="season" src="images/cakes/christmas wedding.jpg" class="d-block w-100" alt="Christmas wedding cake">
+            </div>
+            <div class="carousel-item">
+              <!-- Image credit-- <a href="https://unsplash.com/@dilja96?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Diliara Garifullina</a> on <a href="https://unsplash.com/photos/cookies-in-bowl-near-christmas-tree-cZaUWl1Lse4?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a> -->
+              <img class="season" src="images/cakes/Christmas cookies.jpg" class="d-block w-100" alt="Christmas cookies">
+            </div>
+            <div class="carousel-item">
+              <!-- Image credit-- <a href="https://unsplash.com/@mattseymour?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Matt Seymour</a> on <a href="https://unsplash.com/photos/blue-and-white-ceramic-round-bowl-_ePpuYZiOe0?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a> -->
+              <img class="season" src="images/cakes/Christmas pudding.jpg" class="d-block w-100" alt="Christmas pudding">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#indicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#indicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <br>
+        <h4 id="tis">Tis The Season!</h4>
+        <p id="merry">Let our Seasonal treats and cakes be what makes you merry!</p>
+        <h4 class="christmas">From Our House To Yours, Merry Christmas one and all!</h4>
+        <h4 class="christmas">And A Very Happy New Year To All Oue Customers!</h4>
+        <br><br>
+      </div>
+      <div class="col-sm-4 ">
+        <!-- Image credit -- <a href="https://unsplash.com/@dilja96?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Diliara Garifullina</a> on <a href="https://unsplash.com/photos/two-lighted-taper-candles-beside-christmas-tree-eNkF5mZeMfs?utm_content=creditCopyText& utm_medium=referral&utm_source=unsplash">Unsplash</a> -->
+        <img class="side" src="images/pics/Christmas side2.jpg" alt="Christmas Scene">
+        <br><br>
+      </div>
+    </div>  
+    <div class="row">
+      <div class="col-sm-12">
+        <footer class="footer">
+          <p class="social">Socials:</p>
+          <!--Social media links anchor tagged to the particular websites
+          Social media links would reference the users profile on a real site instead the links are set to each sites home page-->
+          <!--Image credit https://www.facebook.com-->
+          <a href="https://www.facebook.com"><img src="images/icons/facebook.png" alt="facebook logo"></a>
+          <!--Image credit https://www.instagram.com-->
+          <a href="https://www.instagram.com"><img src="images/icons/instagram.png" alt="instagram logo"></a>
+          <!--Image credit https://www.x.com-->
+          <a href="https://www.x.com"><img src="images/icons/x.png" alt="X formally twitter logo"></a>
+          <!--Image credit https://www.ticktok.com-->
+          <a href="https://www.tiktok.com"><img src="images/icons/tiktok.png" alt="tiktok logo"></a>
+          <!---->
+          <div id="copyright">
+            <p class="copy"><span class="rights">All rights reserved</span> ©XMLVC</p>
+          </div>
         </footer>
-    </div>
-</div>
-</main>
+      </div>
+    </div> 
+  </main>
 </body>
 </html>
