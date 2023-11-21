@@ -400,10 +400,12 @@ button {
 #cupcake_body {
     text-align: center;
 }
+/*Style the subtitles from the slides*/
 .subtitle {
     font-family:'Times New Roman', Times, serif;
     font-weight: normal;
 }
+/* Style the paragraphs from the slides*/
 .paragraphs {
     text-align: justify;
     padding-left: 250px;
