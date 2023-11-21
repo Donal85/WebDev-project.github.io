@@ -273,8 +273,8 @@ header h2 {
 /*  h3 title Order-Form */
 #contact {
     text-align: center;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 600;
+    font-family: 'Manrope', 'Fjalla One', sans-serif;
+    font-weight:bolder;
 }
 label {
     width: 150px;
@@ -389,6 +389,18 @@ button {
  /* Cupcake styling */
 #cupcake_body {
     text-align: center;
+}
+.subtitle {
+    font-family:'Times New Roman', Times, serif;
+    font-weight: normal;
+}
+.paragraphs {
+    text-align: justify;
+    padding-left: 250px;
+    padding-right: 250px;
+    font-family: 'Dancing Script','Fjalla One','Manrope',  sans-serif;
+    font-weight: normal;
+    font-size:x-large;
 }
 
 
