@@ -254,6 +254,7 @@ header h2 {
     display: none;
 }
 
+
 /*----------------------Flaviu Vanca Student ID:22195092 - Stylying--------------------*/
 
 /*CONTACT FORM STYLING*/
@@ -269,7 +270,7 @@ header h2 {
     padding: 10px;
     text-align: left;
 }
-/* this is the form h3 title Order-Form */
+/*  h3 title Order-Form */
 #contact {
     text-align: center;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
@@ -333,6 +334,7 @@ button {
 }
 /* END CONTACT FORM STYLING */
 
+
 /* style the carousel images */
 .carousel-item {
     position:relative;
@@ -368,11 +370,26 @@ button {
    box-shadow: goldenrod 0px 0px 2px 2px;
 }
 
-/* */
+/* Wedding styling */
 #wedding_body {
-    /*
-    Image by <a href="https://pixabay.com/users/motionstock-13298494/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5382614">motionstock</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5382614">Pixabay</a>
-    https://pixabay.com/illustrations/hearts-blue-love-valentines-sky-5382614/
-    */
-    background-image: url("../images/backgrounds/hearts_wallpaper.jpg");
+   text-align: center;
 }
+/* Ocassions styling */
+#occasions_body {
+    text-align: center;
+}
+/* Luxury styling */
+#luxury_body {
+   text-align: center;
+}
+/* Deserts styling */
+#dessert_body {
+    text-align: center;
+}
+ /* Cupcake styling */
+#cupcake_body {
+    text-align: center;
+}
+
+
+/* Responsive Styles */
