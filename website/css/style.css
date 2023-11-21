@@ -120,7 +120,8 @@ header h2 {
 /*END OF NAV BAR STYLES*/
 
 
-/*START OF MAIN CONTENT STYLING*/
+/*START OF INDEX PAGE STYLING*/
+
 /*Sets the position of the text within intro*/
 #intro {
     text-align: center;
@@ -135,20 +136,27 @@ header h2 {
 }
 
 /*Sets the size and position of the images to the left and right of the carousel*/
-.home{
+#homeleft{
     margin-left: 5%;
-    margin-right: 5%;
     border-radius: 20px;
-    width: 90%;
-    height: 80%;
+    width: 80%;
+    height: 90%;
+}
+#homeright{
+    margin-left: 15%;
+    border-radius: 20px;
+    width: 80%;
+    height: 90%;
 }
 /*Sets the size and position of the images within the carousel div*/
 .cake{
     margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
     border-radius: 20px;
     border: goldenrod solid 2px;
-    width: 100%;
-    height: 700px;
+    width: 80%;
+    height: 650px;
 }
 
 .tag{
@@ -192,12 +200,14 @@ header h2 {
     text-align: center;
 }
 
+/*END OF INDEX PAGE STYLING*/
+
 /*START OF SEASONAL CONTENT STYLING*/
 
 /*Adds a background to the seasonal page, <main> tag used with an id to disguish between the different pages*/
 #seasonal {
-/*--Image credit-- <a href="https://unsplash.com/@amyshamblen?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Amy Shamblen</a>
- on <a href="https://unsplash.com/photos/green-and-red-baubles-x2lm26Rs2PM?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>*/
+    /*--Image credit-- <a href="https://unsplash.com/@amyshamblen?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Amy Shamblen</a>
+    on <a href="https://unsplash.com/photos/green-and-red-baubles-x2lm26Rs2PM?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>*/
     background-image: url("../images/backgrounds/christmas1.jpg");
 }
 

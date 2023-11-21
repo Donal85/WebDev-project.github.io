@@ -76,7 +76,8 @@ function playAgain() {
     document.getElementById('guessInput').value = '';
 }
 
-//End of mini game script
+//END OF MINI GAME SCRIPT
+
 //START OF TEXT OVER IMAGES SCRIPT
 
 

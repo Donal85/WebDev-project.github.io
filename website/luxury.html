@@ -21,114 +21,116 @@
     <script defer src="script/script.js"></script>
 </head>
 <body>
-    <header>
+  <!--Header coded by Donal Dempsey Student id:23122200-->
+  <header>
     <!--Creates a Bootstrap header with 1 row and 1 column-->
     <div class="row">
-        <div class="col-sm-12">
-            <!--Image credit Flaviu Vanca-->
-            <a c href="index.html"><img id="logo" src="images/logo/logo3.png" alt="logo"></a>
-            <div class="title">
-                <h1><em>Pastry Paradise!</em></h1><br>
-                <h2>Best Cakes In <em>Ireland!</em></h2>
-            </div>
+      <div class="col-sm-12">
+        <!--Image credit Flaviu Vanca-->
+        <a c href="index.html"><img id="logo" src="images/logo/logo3.png" alt="logo"></a>
+        <div class="title">
+          <h1><em>Pastry Paradise!</em></h1><br>
+          <h2>Best Cakes In <em>Ireland!</em></h2>
         </div>
       </div>
-        <br>
-    </header>
-    <!--Creates navbar and anchor links to the other website pages-->
-    <nav class="navbar">
-        <!--An un-ordered list is used to create the links for the navbar, anchor tag used to reference all other pages of the site-->
-        <ul class="bar">
-            <li class="links"><a href="index.html">Home</a></li>
-            <!--The current tag will highlight to user which page they are on-->
-            <li class="links"><a href="occasions.html">Occasions</a></li>
-            <li class="links"><a class="current" href="luxury.html">Luxury</a></li>
-            <li class="links"><a href="wedding.html">Weddings</a></li>
-            <li class="links"><a href="seasonal.html">Seasonal</a></li>
-            <li class="links"><a href="dessert.html">Desserts</a></li>
-            <li class="links"><a href="cupcakes.html">Cup-Cakes</a></li>
-            <!--The contact tag will bring the user to the order form page-->
-            <li class="infolink"><a href="order-form.html">Order-Form</a></li>
-        </ul>
-    </nav>
-    
-        <!--Bootsrtap carousel -->
-        <div id="indicators" class="carousel slide">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#indicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#indicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#indicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-              <button type="button" data-bs-target="#indicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-              <button type="button" data-bs-target="#indicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <!--
-                  Image by <a href="https://pixabay.com/users/applespc-19095802/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7743440">ApplesPC</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7743440">Pixabay</a>
-                  https://pixabay.com/illustrations/cake-decorate-flowers-sugar-design-7743440/
-                -->
-                <img class="imgs" src="images/cakes/luxury_cake.jpg" alt="Rose Petal Fantasy">
-              </div>
-              <div class="carousel-item">
-                <!--
-                  Image by <a href="https://pixabay.com/users/applespc-19095802/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7749792">ApplesPC</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7749792">Pixabay</a>
-                  https://pixabay.com/illustrations/cake-desserts-sweet-chocolate-7749792/
-                -->
-                <img class="imgs" src="images/cakes/luxury_cake_2.jpg" alt="Royal Delight">
-              </div>
-              <div class="carousel-item">
-                 <!--
-                  Image by <a href="https://pixabay.com/users/dcwilliams-484788/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7853576">DC Williams</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7853576">Pixabay</a>
-                  https://pixabay.com/illustrations/cake-dessert-birthday-celebration-7853576/
-                -->
-                <img class="imgs" src="images/cakes/luxury_cake_3.jpg" alt="Crimson Majesty">
-              </div>
-              <div class="carousel-item">
-                 <!--
-                  Image by <a href="https://pixabay.com/users/applespc-19095802/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7743464">ApplesPC</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7743464">Pixabay</a>
-                  https://pixabay.com/illustrations/birthday-cake-chocolate-blue-bird-7743464/
-                -->
-                <img class="imgs" src="images/cakes/luxury_cake_4.jpg" alt="Regal Rhapsody">
-              </div>
-              <div class="carousel-item">
-                 <!--
-                  Image by <a href="https://pixabay.com/users/applespc-19095802/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7743468">ApplesPC</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7743468">Pixabay</a>
-                  https://pixabay.com/illustrations/cake-coffee-chocolate-almond-7743468/
-                -->
-                <img class="imgs" src="images/cakes/luxury_cake_5.jpg" alt="Cocoa Enchantment">
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#indicators" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#indicators" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-          <br>
-<!--Creates a bootstrap footer with 1 row and 1 column-->
-<div class="row">
-    <div class="col-sm-12">
-        <footer class="footer">
-            <p class="social">Socials:</p>
-            <!--Social media links anchor tagged to the particular websites
-            Social media links would reference the users profile on a real site instead the links are set to each sites home page-->
-            <!--Image credit https://www.facebook.com-->
-            <a href="https://www.facebook.com"><img src="images/icons/facebook.png" alt="facebook logo"></a>
-            <!--Image credit https://www.instagram.com-->
-            <a href="https://www.instagram.com"><img src="images/icons/instagram.png" alt="instagram logo"></a>
-            <!--Image credit https://www.x.com-->
-            <a href="https://www.x.com"><img src="images/icons/x.png" alt="X formally twitter logo"></a>
-            <!--Image credit https://www.ticktok.com-->
-            <a href="https://www.tiktok.com"><img src="images/icons/tiktok.png" alt="tiktok logo"></a>
-            <!---->
-            <div id="copyright">
-                <p class="copy"><span class="rights">All rights reserved</span> ©XMLVC</p>
-            </div>
-        </footer>
     </div>
-</div>
+    <br>
+  </header>
+  <!--Nav bar coded by Donal Dempsey Student id:23122200-->
+  <!--Creates navbar and anchor links to the other website pages-->
+  <nav class="navbar">
+    <!--An un-ordered list is used to create the links for the navbar, anchor tag used to reference all other pages of the site-->
+    <ul class="bar">
+      <li class="links"><a href="index.html">Home</a></li>
+      <!--The current tag will highlight to user which page they are on-->
+      <li class="links"><a href="occasions.html">Occasions</a></li>
+      <li class="links"><a class="current" href="luxury.html">Luxury</a></li>
+      <li class="links"><a href="wedding.html">Weddings</a></li>
+      <li class="links"><a href="seasonal.html">Seasonal</a></li>
+      <li class="links"><a href="dessert.html">Desserts</a></li>
+      <li class="links"><a href="cupcakes.html">Cup-Cakes</a></li>
+      <!--The contact tag will bring the user to the order form page-->
+      <li class="infolink"><a href="order-form.html">Order-Form</a></li>
+    </ul>
+  </nav>
+  <!--Bootsrtap carousel code Flaviu Vanca Student ID:22195092-->
+  <div id="indicators" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#indicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#indicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#indicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#indicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      <button type="button" data-bs-target="#indicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <!--
+        Image by <a href="https://pixabay.com/users/applespc-19095802/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7743440">ApplesPC</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7743440">Pixabay</a>
+        https://pixabay.com/illustrations/cake-decorate-flowers-sugar-design-7743440/
+        -->
+        <a href="order-form.html"><img class="imgs" src="images/cakes/luxury_cake.jpg" alt="Rose Petal Fantasy"></a>
+      </div>
+      <div class="carousel-item">
+        <!--
+        Image by <a href="https://pixabay.com/users/applespc-19095802/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7749792">ApplesPC</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7749792">Pixabay</a>
+        https://pixabay.com/illustrations/cake-desserts-sweet-chocolate-7749792/
+        -->
+        <a href="order-form.html"><img class="imgs" src="images/cakes/luxury_cake_2.jpg" alt="Royal Delight"></a>
+      </div>
+      <div class="carousel-item">
+        <!--
+        Image by <a href="https://pixabay.com/users/dcwilliams-484788/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7853576">DC Williams</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7853576">Pixabay</a>
+        https://pixabay.com/illustrations/cake-dessert-birthday-celebration-7853576/
+        -->
+        <a href="order-form.html"><img class="imgs" src="images/cakes/luxury_cake_3.jpg" alt="Crimson Majesty"></a>
+      </div>
+      <div class="carousel-item">
+        <!--
+        Image by <a href="https://pixabay.com/users/applespc-19095802/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7743464">ApplesPC</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7743464">Pixabay</a>
+        https://pixabay.com/illustrations/birthday-cake-chocolate-blue-bird-7743464/
+        -->
+        <a href="order-form.html"><img class="imgs" src="images/cakes/luxury_cake_4.jpg" alt="Regal Rhapsody"></a>
+      </div>
+      <div class="carousel-item">
+        <!--
+        Image by <a href="https://pixabay.com/users/applespc-19095802/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7743468">ApplesPC</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7743468">Pixabay</a>
+        https://pixabay.com/illustrations/cake-coffee-chocolate-almond-7743468/
+        -->
+        <a href="order-form.html"><img class="imgs" src="images/cakes/luxury_cake_5.jpg" alt="Cocoa Enchantment"></a>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#indicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#indicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <br>
+  <!--Footer by Donal Dempsey Student Id 23122200-->
+  <!--Creates a bootstrap footer with 1 row and 1 column-->
+  <div class="row">
+    <div class="col-sm-12">
+      <footer class="footer">
+        <p class="social">Socials:</p>
+        <!--Social media links anchor tagged to the particular websites
+        Social media links would reference the users profile on a real site instead the links are set to each sites home page-->
+        <!--Image credit https://www.facebook.com-->
+        <a href="https://www.facebook.com"><img src="images/icons/facebook.png" alt="facebook logo"></a>
+        <!--Image credit https://www.instagram.com-->
+        <a href="https://www.instagram.com"><img src="images/icons/instagram.png" alt="instagram logo"></a>
+        <!--Image credit https://www.x.com-->
+        <a href="https://www.x.com"><img src="images/icons/x.png" alt="X formally twitter logo"></a>
+        <!--Image credit https://www.ticktok.com-->
+        <a href="https://www.tiktok.com"><img src="images/icons/tiktok.png" alt="tiktok logo"></a>
+        <!---->
+        <div id="copyright">
+          <p class="copy"><span class="rights">All rights reserved</span> ©XMLVC</p>
+        </div>
+      </footer>
+    </div>
+  </div>
 </body>
 </html>
