@@ -263,12 +263,31 @@ header h2 {
     color: rgb(172, 23, 23);
 }
 
-/*Java inserted text styling*/
-
+/*Hides text for java to reviel*/
 .carousel-caption{
     display: none;
 }
-
+/*Style of text within carousel images*/
+.cake1{
+    color: rgb(5, 5, 72);
+    font-weight: 700;
+}
+.cake2{
+    color: black;
+    font-weight: 700;
+}
+.cake3{
+    color: #4c1cd2;
+    font-weight: 700;
+}
+.cake4{
+    color: goldenrod;
+    font-weight: 700;
+}
+.cake5{
+    color: rgb(163, 188, 210);
+    font-weight: 700;
+}
 
 /*----------------------Flaviu Vanca Student ID:22195092 - Stylying--------------------*/
 
@@ -385,30 +404,19 @@ button {
    box-shadow: goldenrod 0px 0px 2px 2px;
 }
 
-/* Wedding styling */
-#wedding_body {
-   text-align: center;
-}
-/* Ocassions styling */
-#occasions_body {
+.subtitle{
     text-align: center;
 }
-/* Luxury styling */
-#luxury_body {
-   text-align: center;
-}
-/* Deserts styling */
-#dessert_body {
+
+.paragraphs{
     text-align: center;
 }
- /* Cupcake styling */
-#cupcake_body {
-    text-align: center;
-}
+
 /*Style the subtitles from the slides*/
 .subtitle {
     font-family:'Times New Roman', Times, serif;
     font-weight: normal;
+    text-align: center;
 }
 /* Style the paragraphs from the slides*/
 .paragraphs {
