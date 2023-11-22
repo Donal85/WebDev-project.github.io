@@ -266,27 +266,9 @@ header h2 {
 /*Hides text for java to reviel*/
 .carousel-caption{
     display: none;
-}
-/*Style of text within carousel images*/
-.cake1{
-    color: rgb(5, 5, 72);
-    font-weight: 700;
-}
-.cake2{
-    color: black;
-    font-weight: 700;
-}
-.cake3{
-    color: #4c1cd2;
-    font-weight: 700;
-}
-.cake4{
-    color: goldenrod;
-    font-weight: 700;
-}
-.cake5{
-    color: rgb(163, 188, 210);
-    font-weight: 700;
+    width: fit-content;
+    margin: auto;
+    background-color: rgba(51, 51, 51, 0.5);
 }
 
 /*----------------------Flaviu Vanca Student ID:22195092 - Stylying--------------------*/
