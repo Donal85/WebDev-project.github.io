@@ -63,38 +63,27 @@
             -->
             <label id="name_label" for="name"><b><sup>*</sup>Name:</b></label>
             <!--required means the field must NOTs be left empty-->
-            <input id="name" type="text"  maxlength="200" size="30" placeholder="name..." required/>
+            <input id="name" type="text" size="30" placeholder="name..." />
             <br>
             <!--use superscript tag for * to represent the mandatory field -->
             <label id="address_label" for="address"><b><sup>*</sup>Address:</b></label>
-            <input id="address" type="text" size="30" placeholder="address..." required/>
+            <input id="address" type="text" size="30" placeholder="address..." />
             <br>
             <!--use superscript tag for * to represent the mandatory field -->
             <label id="phone_number_label" for="phone_number"><b><sup>*</sup>Phone Number:</b></label>
-            <!-- 
-            -the pattern allow us to input 10 digit phone number including area code, ex: ###-###-####
-            -because the task is asking me to have a maximum of 10 digit input I will remove the dashes "-" from the pattern  
-            -I could also add spaces instead of dashes for more clear reading of the phone number-->
-            <input id="phone_number" type="tel" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" name="phone_input" maxlength="10" minlength="10" size="30" placeholder="phone number..." required/>
+            <!--phone number input-->
+            <input id="phone_number" type="tel" name="phone_input" size="30" placeholder="phone number..." />
             <br>
+            <!-- Email Label and input-->
             <label id="email_label" for="email"><b> Email:</b></label>
-            <!--
-            -placeholder is a temporary text displayed in the box, when the box is clicked to type in the email the text dissapears
-            -the pattern breakdown: 
-            -  .+ allow us to input one or more characters of any type before @
-            -  @  
-            -  .+ allow us to input one or more characters of any type after @
-            -  \. matches the .
-            -  ([a-z]+) represents one or more alphabetic characters after the .
-            -->
-            <input id="email" type="email" pattern=".+@.+\.([a-z]+)" size="30" placeholder="email..." name="email_input"/>
+            <input id="email" type="email"  size="30" placeholder="email..." name="email_input"/>
             <br>
             <br>
             <!--Label for Contact preference-->
             <label id="contact_preference_label" for="contact_preference"><b><sup>*</sup>Contact Preference:</b></label>
             <!--label for phone radio input-->
             <label id="phone_label" for="phone"><b>Phone</b></label>
-            <!-- phone radio input grouped with email radio-->
+            <!-- phone radio input grouped with email radio, phone selected by default-->
             <input type="radio" id="phone" name="contact_preference" checked/>
             <label id="email2_label" for="email2"><b>Email</b></label>
             <!-- email radio input grouped with email phone-->
@@ -181,7 +170,7 @@
             <br>
             <p class="terms_newsletter">
                 <!--Terms and Conditions-->
-                <input id="terms_conditions" type="checkbox" name="tc" required/>
+                <input id="terms_conditions" type="checkbox" name="tc" />
                 <span><b><sup>*</sup>Terms and Conditions</b></span>
             </p>
             <p class="terms_newsletter">
