@@ -120,63 +120,40 @@ document.addEventListener('DOMContentLoaded', function () {
   ---------- Flaviu Vanca, Student ID: 22195092 -----------
           -------Form Validation Script -------
 */
-// Wait for the DOM to be ready before executing the script
-document.addEventListener('DOMContentLoaded', function () {
-  // Reference to the form element
-  var orderForm = document.getElementById('form');
+document.addEventListener("DOMContentLoaded", function () {
+  // Fetching the form and adding an event listener for submission
+  const form = document.getElementById("form");
+  form.addEventListener("submit", function (event) {
+      // Preventing the default form submission
+      event.preventDefault();
 
-  // Add event listener for form submission
-  orderForm.addEventListener('submit', function (event) {
-      // Validate name field
-      var nameInput = document.getElementById('name');
-      if (nameInput.value.length < 3) {
-          alert('Please enter a valid name with at least 3 characters.');
-          event.preventDefault(); // Prevent form submission
-          return;
+      // Fetching the values of the form fields
+      const name = document.getElementById("name").value;
+      const email = document.getElementById("email").value;
+      const phone = document.getElementById("phone_number").value;
+
+      // Validating the name field
+      if (name.length < 3) {
+          alert("Name must be at least 3 characters long");
+          return;//exit the function if the condition is not met
       }
 
-      // Validate address field
-      var addressInput = document.getElementById('address');
-      if (addressInput.value === '') {
-          alert('Please enter your address.');
-          event.preventDefault(); // Prevent form submission
-          return;
+      // Validating the email field
+      const emailPattern = /.+@.+\.[a-z]+/;
+      if (!emailPattern.test(email)) {
+          alert("Please enter a valid email address");
+          return;//exit the function if the condition is not met
       }
 
-      // Validate phone number field
-      var phoneInput = document.getElementById('phone_number');
-      if (!/^[0-9]{10}$/.test(phoneInput.value)) {
-          alert('Please enter a valid 10-digit phone number.');
-          event.preventDefault(); // Prevent form submission
-          return;
+      // Validating the phone number field
+      const phonePattern = /^[0-9]{10,15}$/;
+      if (!phonePattern.test(phone)) {
+          alert("Phone number must be between 10 and 15 digits");
+          return;//exit the function if the condition is not met
       }
 
-      // Validate email field
-      var emailInput = document.getElementById('email');
-      if (emailInput.value !== '' && !/.+@.+\..+/.test(emailInput.value)) {
-          alert('Please enter a valid email address or leave it empty.');
-          event.preventDefault(); // Prevent form submission
-          return;
-      }
-
-      // Validate contact preference (either phone or email is selected)
-      var phoneRadio = document.getElementById('phone');
-      var emailRadio = document.getElementById('email2');
-      if (!phoneRadio.checked && !emailRadio.checked) {
-          alert('Please select a contact preference (phone or email).');
-          event.preventDefault(); // Prevent form submission
-          return;
-      }
-
-      // Validate selected cake
-      var selectedCake = document.getElementById('category');
-      if (selectedCake.value === '') {
-          alert('Please select a cake from the list.');
-          event.preventDefault(); // Prevent form submission
-          return;
-      }
-
-      // All validations passed, form can be submitted
-      alert('Form submitted successfully!');
+      // Displaying a tip-like message
+      alert("Form submitted successfully! 🎉");
   });
 });
+/*  ********** END OF FORM VALIDATION ********** */

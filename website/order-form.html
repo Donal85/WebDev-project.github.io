@@ -54,7 +54,7 @@
         </ul>
     </nav>
     <div id="div_form">
-        <form id="form" action="" name="cake order form">
+        <form id="form" name="cake order form">
             <h3 id="contact">Order-Form</h3>
             <br>
             <!--the for attribute is for when we click the Name literal the input wich is referenced 
@@ -91,11 +91,11 @@
             <br>
             <br>
             <!--Label for Contact preference-->
-            <label id="contact_preference_label" for="contact_preference"><b>Contact Preference:</b></label>
+            <label id="contact_preference_label" for="contact_preference"><b><sup>*</sup>Contact Preference:</b></label>
             <!--label for phone radio input-->
             <label id="phone_label" for="phone"><b>Phone</b></label>
             <!-- phone radio input grouped with email radio-->
-            <input type="radio" id="phone" name="contact_preference"/>
+            <input type="radio" id="phone" name="contact_preference" checked/>
             <label id="email2_label" for="email2"><b>Email</b></label>
             <!-- email radio input grouped with email phone-->
             <input type="radio" id="email2" name="contact_preference"/>
@@ -182,12 +182,12 @@
             <p class="terms_newsletter">
                 <!--Terms and Conditions-->
                 <input id="terms_conditions" type="checkbox" name="tc" required/>
-                
+                <span><b><sup>*</sup>Terms and Conditions</b></span>
             </p>
             <p class="terms_newsletter">
                 <!--Subscribe to Monthly Newsletter-->
                 <input id="newsletter" type="checkbox" name="tc"/>
-                <b id="newletter_b">Subscribe to Monthly Newsletter</b>
+                <span><b id="newletter_b">Subscribe to Monthly Newsletter</b></span>
             </p>
             <br>
             <!--use superscript tag for * to represent the mandatory field -->
