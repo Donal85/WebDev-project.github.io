@@ -257,10 +257,41 @@ header h2 {
     box-sizing: border-box;
     padding: 2px;
 }
-.christmas{
+#christmas{
     text-align: center;
     font-size: 30px;
     color: rgb(172, 23, 23);
+}
+#timer{
+    display: none;
+    text-align: center;
+    font-size: 30px;
+    color: rgb(172, 23, 23);
+}
+#time{
+    display: none;
+    text-align: inline;
+    color: rgb(172, 23, 23);
+}
+#count{
+    width: 150px;
+    padding: 5px;
+    border-radius: 10px;
+    border-color: goldenrod;
+    text-align: center;
+    font-weight: 700;
+    display: block;
+    margin: 0 auto;
+}
+#hide{
+    display: none;
+    width: 150px;
+    padding: 5px;
+    border-radius: 10px;
+    border-color: goldenrod;
+    text-align: center;
+    font-weight: 700;
+    margin: 0 auto;
 }
 
 /*Hides text for java to reviel*/

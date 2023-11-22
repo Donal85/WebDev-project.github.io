@@ -115,6 +115,55 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   }); //closes addEventListener-DOMContentLoaded & function 
 
+//END OF TEXT OVER IMAGE SCRIPT
+
+//START OF SEASONAL COUNTDOWN TIMER
+
+//knowledge and code obtained from https://www.w3schools.com/howto/howto_js_countdown.asp
+
+// Set the date we're counting down to
+var countDownDate = new Date("Dec 25, 2023 00:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("time").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("time").innerHTML = "EXPIRED";
+  }
+}, 1000);
+
+function change() {
+  document.getElementById('timer').style.display = 'inline';
+  document.getElementById('time').style.display = 'inline';
+  document.getElementById('hide').style.display = 'block';
+  document.getElementById('christmas').style.display = 'none';
+  document.getElementById('count').style.display = 'none';
+}
+function back(){
+  document.getElementById('timer').style.display = 'none';
+  document.getElementById('time').style.display = 'none';
+  document.getElementById('hide').style.display = 'none';
+  document.getElementById('christmas').style.display = '';
+  document.getElementById('count').style.display = 'block';
+}
 
 /* 
   ---------- Flaviu Vanca, Student ID: 22195092 -----------
