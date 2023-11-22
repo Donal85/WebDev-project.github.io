@@ -116,3 +116,67 @@ document.addEventListener('DOMContentLoaded', function () {
   }); //closes addEventListener-DOMContentLoaded & function 
 
 
+/* 
+  ---------- Flaviu Vanca, Student ID: 22195092 -----------
+          -------Form Validation Script -------
+*/
+// Wait for the DOM to be ready before executing the script
+document.addEventListener('DOMContentLoaded', function () {
+  // Reference to the form element
+  var orderForm = document.getElementById('form');
+
+  // Add event listener for form submission
+  orderForm.addEventListener('submit', function (event) {
+      // Validate name field
+      var nameInput = document.getElementById('name');
+      if (nameInput.value.length < 3) {
+          alert('Please enter a valid name with at least 3 characters.');
+          event.preventDefault(); // Prevent form submission
+          return;
+      }
+
+      // Validate address field
+      var addressInput = document.getElementById('address');
+      if (addressInput.value === '') {
+          alert('Please enter your address.');
+          event.preventDefault(); // Prevent form submission
+          return;
+      }
+
+      // Validate phone number field
+      var phoneInput = document.getElementById('phone_number');
+      if (!/^[0-9]{10}$/.test(phoneInput.value)) {
+          alert('Please enter a valid 10-digit phone number.');
+          event.preventDefault(); // Prevent form submission
+          return;
+      }
+
+      // Validate email field
+      var emailInput = document.getElementById('email');
+      if (emailInput.value !== '' && !/.+@.+\..+/.test(emailInput.value)) {
+          alert('Please enter a valid email address or leave it empty.');
+          event.preventDefault(); // Prevent form submission
+          return;
+      }
+
+      // Validate contact preference (either phone or email is selected)
+      var phoneRadio = document.getElementById('phone');
+      var emailRadio = document.getElementById('email2');
+      if (!phoneRadio.checked && !emailRadio.checked) {
+          alert('Please select a contact preference (phone or email).');
+          event.preventDefault(); // Prevent form submission
+          return;
+      }
+
+      // Validate selected cake
+      var selectedCake = document.getElementById('category');
+      if (selectedCake.value === '') {
+          alert('Please select a cake from the list.');
+          event.preventDefault(); // Prevent form submission
+          return;
+      }
+
+      // All validations passed, form can be submitted
+      alert('Form submitted successfully!');
+  });
+});

@@ -63,7 +63,7 @@
             -->
             <label id="name_label" for="name"><b><sup>*</sup>Name:</b></label>
             <!--required means the field must NOTs be left empty-->
-            <input id="name" type="text" minlength="3" maxlength="200" size="30" placeholder="name..." required/>
+            <input id="name" type="text"  maxlength="200" size="30" placeholder="name..." required/>
             <br>
             <!--use superscript tag for * to represent the mandatory field -->
             <label id="address_label" for="address"><b><sup>*</sup>Address:</b></label>
@@ -167,6 +167,11 @@
             </select>
             <br>
             <br>
+            <!-- Quantity Selection -->
+            <label id="quantity_label" for="quantity"><b><sup>*</sup>Quantity:</b></label>
+            <input type="number" name="quantity" id="quantity" min="1" max="100" value="1">
+            <br>
+            <br>
             <!--Label for Additional Comments-->
             <label id="comments_label" for="aditional_comments"><b id="ad_com">Additional Comments</b></label>
             <br>
@@ -177,7 +182,7 @@
             <p class="terms_newsletter">
                 <!--Terms and Conditions-->
                 <input id="terms_conditions" type="checkbox" name="tc" required/>
-                <b><sup>*</sup>Terms And Conditions</b>
+                
             </p>
             <p class="terms_newsletter">
                 <!--Subscribe to Monthly Newsletter-->
