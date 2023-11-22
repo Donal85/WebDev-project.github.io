@@ -80,24 +80,39 @@ function playAgain() {
 
 //START OF TEXT OVER IMAGES SCRIPT
 
+//addEventListner allows me to specify the function to look out for a certain event within the html
+//DOMContentLoaded ensures script will not run until after the html is fully loaded
+document.addEventListener('DOMContentLoaded', function () {
+    // query.SelectorAll targets all elements with the class 'carousel-item'
+    var carouselItems = document.querySelectorAll('.carousel-item');
+    // Loop's through each 'carousel-item' element
+    carouselItems.forEach(function(carouselItem) {
+      // Add's event listeners and allocates a function for each 'carousel-item' in this case, mouseover & mouseout
+      carouselItem.addEventListener('mouseover', function () {
+        showCaption(carouselItem);
+      }); //closes addEventListner-mouseover & function
+  
+      carouselItem.addEventListener('mouseout', function () {
+        hideCaption(carouselItem);
+      }); //closes addEventListner-mouseout & function
+    }); //closes forEach-function
 
-function show() {
-  var welcome = document.getElementById('insert').style.display = 'inline';
-  welcome.style.display = '';
-}
-
-function hide() {
-  var welcome = document.getElementById('insert');
-  welcome.style.display = 'none';
-}
-function init() {
-  var surround = document.getElementById('text');
-  surround.onmouseover = show;
-  surround.onmouseout = hide;  
-}
-
-window.onload = init;   
-
-
+    //Calls the fuction after it is detected by the eventlisteners 
+    function showCaption(carouselItem) {
+      // Find the 'carousel-caption' within the current 'carousel-item'
+      var caption = carouselItem.querySelector('.carousel-caption');
+      if (caption) {
+        caption.style.display = 'block';
+      }
+    }
+  
+    function hideCaption(carouselItem) {
+      // Find the 'carousel-caption' within the current 'carousel-item'
+      var caption = carouselItem.querySelector('.carousel-caption');
+      if (caption) {
+        caption.style.display = 'none';
+      }
+    }
+  }); //closes addEventListener-DOMContentLoaded & function 
 
 

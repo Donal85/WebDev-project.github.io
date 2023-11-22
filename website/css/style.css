@@ -185,14 +185,18 @@ header h2 {
 }
 .footer img{
     float: left;
+    margin-left: 0.5%;
     width: 2%;
     height: 38px;
     box-sizing: border-box;
-    padding: 2px;
+    
 }
 
 .social{
+    margin-left: 1%;
+    color: blue;
     text-decoration: underline;
+    font-weight: 800;
 }
 
 #copyright{
@@ -204,7 +208,7 @@ header h2 {
 
 /*START OF SEASONAL CONTENT STYLING*/
 
-/*Adds a background to the seasonal page, <main> tag used with an id to disguish between the different pages*/
+/*Adds a background to the seasonal page, body id used to disguish between the different pages*/
 #seasonal {
     /*--Image credit-- <a href="https://unsplash.com/@amyshamblen?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Amy Shamblen</a>
     on <a href="https://unsplash.com/photos/green-and-red-baubles-x2lm26Rs2PM?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>*/
@@ -223,6 +227,7 @@ header h2 {
 
 /*Sets the size and position of the images to the left and right of the carousel*/
 .side{
+    border: red solid 2px;
     margin-left: 10%;
     margin-right: 10%;
     border-radius: 10px;
@@ -260,7 +265,7 @@ header h2 {
 
 /*Java inserted text styling*/
 
-#insert{
+.carousel-caption{
     display: none;
 }
 
