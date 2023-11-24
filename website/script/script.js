@@ -168,7 +168,7 @@ function back(){
 
 /* 
   ---------- Flaviu Vanca, Student ID: 22195092 -----------
-          -------Form Validation Script -------
+              ------- Form Validation -------
 */
 /* 
   Syntax: target.addEventListener(type, listener);
