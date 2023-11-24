@@ -23,29 +23,30 @@ header{
     text-align: center;
     margin-right: 1%;
 }
-
-/*Sets the size and style of the h1 text*/
+/*Sets the size, style and position of the h1 text. */
 header h1 {
     font-family: 'Manrope', sans-serif;
     font-size: 65px;
     font-weight: 600;
     margin-right: 3%;
+    /*The following code adds a liner gradient background, clips the background in the shape of the text within the h1 and makes the rest of the background transparent */
     background-image: linear-gradient(to left, #5736b1, #b393d3);
     color: transparent;
     background-clip: text;
+    /*webkit allows this function to work on webkit browsers*/
     -webkit-background-clip: text;
 }
-
-/*Sets the size and style of the h1 text*/
+/*Sets the size and style of the h2 text*/
 header h2 {
     font-size: 36px;
     font-weight: 600;
+    /*The following code adds a liner gradient background, clips the background in the shape of the text within the h2 and makes the rest of the background transparent */
     background-image: linear-gradient(to left, #5736b1, #b393d3);
     color: transparent;
     background-clip: text;
+    /*webkit allows this function to work on webkit browsers*/
     -webkit-background-clip: text;
 }
-
 /*sets the style, size and position of the logo within the header */
 #logo {
     display: inline-flex;
@@ -57,28 +58,24 @@ header h2 {
 /*End OF HEADER STYLES*/
 
 /*START OF NAV BAR STYLES*/
-/*Sets the style, height, margin, padding and colour of the nav bar*/
+/*Sets the position and size of the nav bar*/
 .navbar {
     margin: 0;
     padding: 0;
-    overflow: hidden;
 }
-
-/*removes all styling from the nav bar list, adds a background color and sets the width of the Nav bar*/
+/*Removes all styling from the nav bar ul list, adds a background color and sets the width of the Nav bar*/
 .bar {
     list-style-type: none;
     width: 100%;
     background-color: gray;
 }
-
-/* Google font Fjalla One with a size of 20px applied to navbar page, links floats the links to the left of the page */
+/* Google font Fjalla One with a size of 22px applied to navbar page, floats the links to the left of the page */
 .links{
     font-family: 'Fjalla One', sans-serif;
     font-size: 22px;
     float: left;
 }
-
-/*Sets the style and colour of the links within the nav bar*/
+/*Sets the size, style and colour of the links within the nav bar*/
 .links a {
     display: block;
     color: white;
@@ -86,25 +83,21 @@ header h2 {
     padding: 14px 16px;
     text-decoration: none;
 }
-
-/*Causes the text within the navbar to change to gold when moused over and the background of the link to change to black*/
+/*Causes the text within the navbar to change to gold when moused over*/
 .links :hover{
     color: gold;
 }
-
-/*Whichever page the user is on will be highlighted in green as a visual cue*/
+/*Whichever page the user is on will be highlighted in a different background color as a visual cue*/
 .current{
     background-color: rgb(94, 94, 193);
 }
-
-/*Google font Fjalla One with a size of 20px applied to navbar contact link and Floats the contact link within the navbar to the right*/
+/*Google font Fjalla One with a size of 22px applied to navbar order-form link and Floats the link within the navbar to the right*/
 .infolink {
     font-family: 'Fjalla One', sans-serif;
     font-size: 22px;
     float: right;
 }
-
-/*Sets the style and colour of the nav bar contact link*/
+/*Sets the size, style and colour of the order-form link within the nav bar*/
 .infolink a {
     display: block;
     color: white;
@@ -112,13 +105,11 @@ header h2 {
     padding: 14px 16px;
     text-decoration: none;
 }
-
-/*Causes the text of the contact link within the navbar to change to gold on mouse over*/
+/*Causes the text of the order-form link within the navbar to change to gold on mouse over*/
 .infolink :hover{
     color: gold;
 }
 /*END OF NAV BAR STYLES*/
-
 
 /*START OF INDEX PAGE STYLING*/
 
@@ -134,21 +125,14 @@ header h2 {
 #welcome {
     font-size: 30px;
 }
-
-/*Sets the size and position of the images to the left and right of the carousel*/
+/*Sets the size and position of the images in the 1st coloumn of the carousel. Also curves the image borders*/
 #homeleft{
     margin-left: 5%;
     border-radius: 20px;
     width: 80%;
     height: 90%;
 }
-#homeright{
-    margin-left: 15%;
-    border-radius: 20px;
-    width: 80%;
-    height: 90%;
-}
-/*Sets the size and position of the images within the carousel div*/
+/*Sets the size, style and position of the images within the 2nd coloum of the carousel div*/
 .cake{
     margin-top: 5%;
     margin-left: 10%;
@@ -158,63 +142,81 @@ header h2 {
     width: 80%;
     height: 650px;
 }
-
-.tag{
+/*Sets the size and position of the text within .tag*/
+#tag{
     text-align: center;
     font-size: 30px;
 }
+/*Sets the size and position of the images in the 3rd coloumn of the carousel. Also curves the image borders*/
+#homeright{
+    margin-left: 15%;
+    border-radius: 20px;
+    width: 80%;
+    height: 90%;
+}
+/*END OF INDEX PAGE STYLING*/
 
+/*START OF MINI GAME STYLING*/
 
+/*Adds a dotted boarder above the mini game to visualy set it apart from the index page, aligns everything within the game div to centre and sets the text color within the div*/
 #game{
     border-top: dotted black;
-    
+    text-align: center;
+    color: rgb(7, 4, 94)
 }
 /*Hides the minigame until called by button click*/
 #minigame {
     display: none;
 }
+/*END OF MINI GAME STYLING*/
 
-/*Aligns everything within the game div to centre*/
-#game{
-    text-align: center;
-    color: rgb(7, 4, 94)
-}
+/*START OF FOOTER STYLING*/
 
+/*Adds a dotted boarder to the top of the footer as a visual cue to the user they are at the end of the page*/
 .footer{
     border-top: dotted black;
 }
-.footer img{
-    float: left;
-    margin-left: 0.5%;
-    width: 2%;
-    height: 38px;
-    box-sizing: border-box;
-    
-}
-
+/*Sets the style, size and position of the text for .social*/
 .social{
     margin-left: 1%;
     color: blue;
     text-decoration: underline;
     font-weight: 800;
 }
-
-#copyright{
-    margin-right: 150px;
-    text-align: center;
+/*Sets the size and position of the images within the footer*/
+.footer img{
+    float: left;
+    margin-left: 0.5%;
+    width: 2%;
+    height: 38px;
+    box-sizing: border-box; 
 }
-
-/*END OF INDEX PAGE STYLING*/
+/*Sets the size and position of the text for .copywrite*/
+.copyright{
+    margin-right: 175px;
+    text-align: center;
+    font-size: 16px;
+}
+/*END OF FOOTER STYLING*/
 
 /*START OF SEASONAL CONTENT STYLING*/
 
-/*Adds a background to the seasonal page, body id used to disguish between the different pages*/
+/*Adds a background to the seasonal page, a body-id is used to disguish between the different pages*/
 #seasonal {
     /*--Image credit-- <a href="https://unsplash.com/@amyshamblen?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Amy Shamblen</a>
     on <a href="https://unsplash.com/photos/green-and-red-baubles-x2lm26Rs2PM?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>*/
     background-image: url("../images/backgrounds/christmas1.jpg");
 }
-
+/*Sets the size and position of the images in the 1st and 3rd coloumn's of the carousel. Also styles the image borders*/
+.side{
+    border: red solid 2px;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 10px;
+    width: 80%;
+    height: 85%;
+}
+/*Sets the size and position of the images in the 2nd coloumn of the carousel. Also styles the image borders*/
 .season{
     border: goldenrod solid 2px;
     border-radius: 20px;
@@ -224,65 +226,62 @@ header h2 {
     width: 96%;
     height: 550px;
 }
-
-/*Sets the size and position of the images to the left and right of the carousel*/
-.side{
-    border: red solid 2px;
-    margin-left: 10%;
-    margin-right: 10%;
-    border-radius: 10px;
-    width: 80%;
-    height: 90%;
-}
-
+/*Google font Overpass used*/
+/*Sets the style and size of text for the #tis h4*/
 #tis{
     text-align: center;
     font-family: 'Overpass', sans-serif;
     color: rgb(194, 18, 18);
     font-size: 36px;
     font-weight: 600;
-
 }
+/*Google font Manrope used*/
+/*Sets the style and size of text for the #merry <p>*/
 #merry{
     text-align: center;
     font-family: 'Manrope', sans-serif;
     font-size: 26px;
     font-weight: 200;
 }
-.cfooter img{
-    display: block;
-    float: left;
-    width: 2%;
-    height: 38px;
-    box-sizing: border-box;
-    padding: 2px;
+/*END OF SEASONAL STYLING*/
+
+/*START OF COUNTDOWN TIMER STYLING*/
+
+/*Sets the size of the div, position of the div and content position within the div*/
+#clock{
+    text-align: center;
+    width: 45%;
+    margin: auto;
 }
+/*Font size and color for #christmas h4 within the div*/
 #christmas{
-    text-align: center;
-    font-size: 30px;
+    font-size: 36px;
     color: rgb(172, 23, 23);
 }
-#timer{
-    display: none;
-    text-align: center;
-    font-size: 30px;
-    color: rgb(172, 23, 23);
-}
+/*Hides the countdown timer until called with button click through javascript manipulation. Also sets the size and color of the text*/
 #time{
     display: none;
-    text-align: inline;
+    font-size: 46px;
     color: rgb(172, 23, 23);
 }
+/*Hides the #timer h4 until called with button click through javascript manipulation. Font size and color for #timer h4 within the div*/
+#timer{
+    display: none;
+    font-size: 36px;
+    color: rgb(172, 23, 23);
+}
+/*Sets the style, size, and position of the #count button*/
 #count{
-    width: 150px;
+    width: 200px;
     padding: 5px;
     border-radius: 10px;
     border-color: goldenrod;
     text-align: center;
     font-weight: 700;
     display: block;
-    margin: 0 auto;
+    margin: auto;
 }
+/*Hides the #hide button until called with button click through javascript manipulation. Sets the style, size, and position of the #hide button*/
 #hide{
     display: none;
     width: 150px;
@@ -291,16 +290,22 @@ header h2 {
     border-color: goldenrod;
     text-align: center;
     font-weight: 700;
-    margin: 0 auto;
+    margin: auto;
 }
+/*END OF COUNTDOWN TIMER STYLING*/
 
-/*Hides text for java to reviel*/
+/*START OF CAROUSEL TEXT STYLING*/
+
+/*Carousel text set to not display until mouseover (js manipulation),also sets the background style, boarder style and and text area size */
 .carousel-caption{
     display: none;
     width: fit-content;
     margin: auto;
     background-color: rgba(51, 51, 51, 0.5);
+    border-radius: 10px;
 }
+/*END OF CAROUSEL TEXT STYLING*/
+/*----------------------End of Donal Dempsey Styling-----------------------------------*/
 
 /*----------------------Flaviu Vanca Student ID:22195092 - Stylying--------------------*/
 

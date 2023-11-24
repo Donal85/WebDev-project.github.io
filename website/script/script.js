@@ -151,11 +151,12 @@ var x = setInterval(function() {
 }, 1000);
 
 function change() {
-  document.getElementById('timer').style.display = 'inline';
-  document.getElementById('time').style.display = 'inline';
+  document.getElementById('timer').style.display = 'contents';
+  document.getElementById('time').style.display = 'contents';
   document.getElementById('hide').style.display = 'block';
   document.getElementById('christmas').style.display = 'none';
   document.getElementById('count').style.display = 'none';
+
 }
 function back(){
   document.getElementById('timer').style.display = 'none';
