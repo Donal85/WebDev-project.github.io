@@ -308,8 +308,7 @@ header h2 {
 /*----------------------End of Donal Dempsey Styling-----------------------------------*/
 
 /*----------------------Flaviu Vanca Student ID:22195092 - Stylying--------------------*/
-
-/*CONTACT FORM STYLING*/
+/* ORDER-FORM STYLING */
 #div_form {
    display: flex;
    justify-content:center;
@@ -388,10 +387,9 @@ button {
 #newletter_b {
     margin-left: 5px;
 }
-/* END CONTACT FORM STYLING */
+/* END OF ORDER-FORM STYLING */
 
-
-/* style the carousel images */
+/* STYLE THE CAROUSEL AND IMAGES */
 .carousel-item {
     position:relative;
     text-align: center;
@@ -402,14 +400,14 @@ button {
     border-radius: 20px;
     height: 550px;   
 }
-
+/* Style the h3 class from the pages with the carousel */
 .subtitle{
     text-align: center;
 }
+/* Style the paragraphs from the pages with the carousel */
 .paragraphs{
     text-align: center;
 }
-
 /*Style the subtitles from the slides*/
 .subtitle {
     font-family:'Times New Roman', Times, serif;
@@ -425,5 +423,4 @@ button {
     font-weight: normal;
     font-size:x-large;
 }
-
-/* Responsive Styles */
+/* END OF STYLE THE CAROUSEL AND IMAGES */

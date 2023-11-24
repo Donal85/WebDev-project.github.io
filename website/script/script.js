@@ -196,26 +196,6 @@ function back(){
           return;//return is used to exit the function because it doesn' meets the requirements    
       }//End if statement
 
-      //Validate the email field if the field is not empty
-      var emailInput = document.getElementById('email');//Select the HTML element by the ID or class then assign it to the var
-      //Trim method removes empty spaces added by mistake then check if the string is not empty
-      if (emailInput.value.trim() !== '') { 
-        /*
-          -Store the email pattern. 
-          -I used this email pattern for the CA. 
-            It practically reads like this:
-              1-There must be at least one character before @
-              2-At least one character between @ and .
-              3-At least one lower case letter after .  
-        */
-        var emailPattern = /.+@.+\.[a-z]+/;
-        //Check if the pattern is matching against the value 
-          if (!emailPattern.test(emailInput.value)) {
-              alert('Please enter a valid email address.');//Display message within the alert box
-              return;//return is used to exit the function because it doesn' meets the requirements  
-          }//End inner if statement
-      }//End if statement
-
       //Validate the address field
       var address = document.getElementById('address');//Select the HTML element by the ID or class then assign it to the var
       if(address.value.length < 6){//Check if the length of the address is lass than 6  
@@ -238,6 +218,26 @@ function back(){
       if (!phonePattern.test(phoneInput.value)) {
           alert('Please enter a valid phone number with 10 to 15 digits.');//Display message within the alert box
           return;//return is used to exit the function because it doesn' meets the requirements  
+      }//End if statement
+  
+      //Validate the email field if the field is not empty
+      var emailInput = document.getElementById('email');//Select the HTML element by the ID or class then assign it to the var
+      //Trim method removes empty spaces added by mistake then check if the string is not empty
+      if (emailInput.value.trim() !== '') { 
+        /*
+          -Store the email pattern. 
+          -I used this email pattern for the CA. 
+            It practically reads like this:
+              1-There must be at least one character before @
+              2-At least one character between @ and .
+              3-At least one lower case letter after .  
+        */
+        var emailPattern = /.+@.+\.[a-z]+/;
+        //Check if the pattern is matching against the value 
+          if (!emailPattern.test(emailInput.value)) {
+              alert('Please enter a valid email address.');//Display message within the alert box
+              return;//return is used to exit the function because it doesn' meets the requirements  
+          }//End inner if statement
       }//End if statement
 
       //Validate 'Select Cake' dropdown menu
@@ -308,3 +308,5 @@ document.addEventListener('DOMContentLoaded', function () {
 
 });
 /* ********** END STYLE OF THE PREVIOUS AND NEXT SLIDE ICONS ********** */
+ 
+
