@@ -170,66 +170,141 @@ function back(){
   ---------- Flaviu Vanca, Student ID: 22195092 -----------
           -------Form Validation Script -------
 */
+/* 
+  Syntax: target.addEventListener(type, listener);
+  -The event listener is added to manipulate the elements
+  -The method accepts 2 parameters. The first one is the type and second one is the listener, 
+    but in our care we use an anonymous function. It is called an anonymous function because 
+    its created on the spot and has no name, simmilar to anonymous classes in java :) .  
 
-document.addEventListener('DOMContentLoaded', function () {
-  //Select the form element
+  */
+  document.addEventListener('DOMContentLoaded', function () {
+  //Select the form
   var form = document.getElementById('form');
 
-  //Add an event listener for the form submission
+  //Add an event listener for the form submission.
+  //This line of code is simmilar to the above one but it is used for the form
   form.addEventListener('submit', function (event) {
-      // Prevent the default form submission
+      //Prevent the default form submission
       event.preventDefault();
 
       //Validate the name field
-      var nameInput = document.getElementById('name');
+      var nameInput = document.getElementById('name');//Select the HTML element by the ID or class then assign it to the var 
+      //If the length of the name is less than 2 then display a message
       if (nameInput.value.length < 2) {
-          alert('Please enter a name with a minimum of 2 letters.');
-          return;
+          alert('Please enter a name with a minimum of 2 letters.');//Display message within the alert box
+          return;//return is used to exit the function because it doesn' meets the requirements    
       }//End if statement
 
-      // Validate the email field if it is not empty
-      var emailInput = document.getElementById('email');
-      if (emailInput.value.trim() !== '') {
-         var emailPattern = /.+@.+\.[a-z]+/;
+      //Validate the email field if the field is not empty
+      var emailInput = document.getElementById('email');//Select the HTML element by the ID or class then assign it to the var
+      //Trim method removes empty spaces added by mistake then check if the string is not empty
+      if (emailInput.value.trim() !== '') { 
+        /*
+          -Store the email pattern. 
+          -I used this email pattern for the CA. 
+            It practically reads like this:
+              1-There must be at least one character before @
+              2-At least one character between @ and .
+              3-At least one lower case letter after .  
+        */
+        var emailPattern = /.+@.+\.[a-z]+/;
+        //Check if the pattern is matching against the value 
           if (!emailPattern.test(emailInput.value)) {
-              alert('Please enter a valid email address.');
-              return;
+              alert('Please enter a valid email address.');//Display message within the alert box
+              return;//return is used to exit the function because it doesn' meets the requirements  
           }//End inner if statement
       }//End if statement
 
       //Validate the address field
-      var address = document.getElementById('address');
-      if(address.value.length < 6){
-        alert('Please enter an address.');
-        return;
+      var address = document.getElementById('address');//Select the HTML element by the ID or class then assign it to the var
+      if(address.value.length < 6){//Check if the length of the address is lass than 6  
+        alert('Please enter an address.');//Display message within the alert box
+        return;//return is used to exit the function because it doesn' meets the requirements  
       }//End if statement
 
       //Validate the phone number field
+      //Select the HTML element by the ID or class then assign it to the var
       var phoneInput = document.getElementById('phone_number');
+      /*
+        The patternn reads like this:
+          - ^ (Caret) indicates the start of a string 
+          - [0-9] indicates that the phone number should consist of digits from 0 to 9
+          - {10,15} indicates that the ength of the phone number should be between 10 to 15 digits
+          - $ indicates the end of the string
+      */
       var phonePattern = /^[0-9]{10,15}$/;
+      //Check if the pattern is matching against the value 
       if (!phonePattern.test(phoneInput.value)) {
-          alert('Please enter a valid phone number with 10 to 15 digits.');
-          return;
+          alert('Please enter a valid phone number with 10 to 15 digits.');//Display message within the alert box
+          return;//return is used to exit the function because it doesn' meets the requirements  
       }//End if statement
 
       //Validate 'Select Cake' dropdown menu
+      //Select the HTML element by the ID or class then assign it to the var
       var cakeSelect = document.getElementById('category');
+      /*
+        Because the first option in the cake dropdown selection is "Select Cake", I've added a strict check to validate if the value is empty. The form cannot be submited without any cake being selected. 
+      */
       if (cakeSelect.value === '') {
         alert('Please select a cake category.');//Display message within the alert box
-        return;
+        return;//return is used to exit the function because it doesn' meets the requirements  
       }//End if statement
 
-
+      //Validate the selection of the terms and conditions chackbox 
+      //Select the HTML element by the ID or class then assign it to the var
       var terms = document.getElementById('terms_conditions');
-      if(!terms.checked){
-        alert('Please accept the Terms and Conditions');
-        return;
+      if(!terms.checked){//Check if the cjeckbox is selected and revert the boolean value using !
+        alert('Please accept the Terms and Conditions');//Display message within the alert box
+        return;//return is used to exit the function because it doesn' meets the requirements  
       }//End if statement
 
       //Form validation message
       alert('Form submitted successfully!');
 
-      form.reset();//Reset the form
+      //Reset the form by clearing all the fields
+      form.reset();
   });
 });
 /*  ********** END OF FORM VALIDATION ********** */
+
+/* ********** STYLE THE PREVIOUS AND NEXT SLIDE ICONS ********** */
+document.addEventListener('DOMContentLoaded', function () {
+    // Get the previous and next slide icons
+    var prevIcon = document.querySelector('.carousel-control-prev-icon');
+    var nextIcon = document.querySelector('.carousel-control-next-icon');
+
+    //Styles for the previous slide icon
+    prevIcon.style.width = '40px';
+    prevIcon.style.height = '50px';
+    prevIcon.style.borderRadius = '50px';
+    prevIcon.style.backgroundColor = 'rgb(94, 94, 193)';
+
+    //Add hover effect for the previous slide icon
+    prevIcon.addEventListener('mouseover', function () {
+        prevIcon.style.boxShadow = 'goldenrod 0px 0px 2px 2px';
+    });
+
+    //Remove hover effect when not hovered
+    prevIcon.addEventListener('mouseout', function () {
+        prevIcon.style.boxShadow = 'none';
+    });
+
+    //Styles for the next slide icon
+    nextIcon.style.width = '40px';
+    nextIcon.style.height = '50px';
+    nextIcon.style.borderRadius = '50px';
+    nextIcon.style.backgroundColor = 'rgb(94, 94, 193)';
+
+    //Add hover effect for the next slide icon
+    nextIcon.addEventListener('mouseover', function () {
+        nextIcon.style.boxShadow = 'goldenrod 0px 0px 2px 2px';
+    });
+
+    //Remove hover effect when not hovered
+    nextIcon.addEventListener('mouseout', function () {
+        nextIcon.style.boxShadow = 'none';
+    });
+
+});
+/* ********** END STYLE OF THE PREVIOUS AND NEXT SLIDE ICONS ********** */
