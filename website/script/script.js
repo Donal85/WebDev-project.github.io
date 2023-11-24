@@ -171,15 +171,15 @@ function back(){
 */
 
 document.addEventListener('DOMContentLoaded', function () {
-  // Select the form element
+  //Select the form element
   var form = document.getElementById('form');
 
-  // Add an event listener for the form submission
+  //Add an event listener for the form submission
   form.addEventListener('submit', function (event) {
       // Prevent the default form submission
       event.preventDefault();
 
-      // Validate the name field
+      //Validate the name field
       var nameInput = document.getElementById('name');
       if (nameInput.value.length < 2) {
           alert('Please enter a name with a minimum of 2 letters.');
@@ -193,7 +193,7 @@ document.addEventListener('DOMContentLoaded', function () {
           if (!emailPattern.test(emailInput.value)) {
               alert('Please enter a valid email address.');
               return;
-          }
+          }//End inner if statement
       }//End if statement
 
       //Validate the address field
@@ -225,7 +225,7 @@ document.addEventListener('DOMContentLoaded', function () {
         return;
       }//End if statement
 
-      // Form validation message
+      //Form validation message
       alert('Form submitted successfully!');
 
       form.reset();//Reset the form
