@@ -119,37 +119,55 @@ document.addEventListener('DOMContentLoaded', function () {
 
 //START OF SEASONAL COUNTDOWN TIMER
 
-//knowledge and code obtained from https://www.w3schools.com/howto/howto_js_countdown.asp
+//knowledge and  some code obtained from https://www.w3schools.com/howto/howto_js_countdown.asp
 
-// Set the date we're counting down to
-var countDownDate = new Date("Dec 25, 2023 00:00:00").getTime();
+// Set the countdown date to Christmas Day
+var countDownDate = getNextChristmasDate().getTime();
 
-// Update the count down every 1 second
+// Update the countdown every 1 second
 var x = setInterval(function() {
-
   // Get today's date and time
   var now = new Date().getTime();
 
-  // Find the distance between now and the count down date
+  // Finds the distance between now and the end of the timer 
   var distance = countDownDate - now;
 
-  // Time calculations for days, hours, minutes and seconds
+  //Calculates how many days are remaining, Math.floor rounds down to the nearest whole number to get the remaining full days
   var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  //Calculates the remaining millisecounds (after subtracting the days), converts the remaining millisecounds to hours Math.floor then rounds down to the nearest whole number to get the remaining full hours
   var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  //Calculates remaining millisecounds (after subtracting the days and hours), converts the remaining millisecounds to minutes, Math.floor then rounds down to the nearest whole number to get the remaining full minutes
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  //Calculates the remaining millisecounds (after subtracting days, hours and minutes), converts them in to seconds, Math.floor then rounds down to the nearest whole number to get the remaining full seconds
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-  // Display the result in the element with id="demo"
-  document.getElementById("time").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
+  // Display the remaining time in the element with id="time"
+  document.getElementById("time").innerHTML = days + " Days, " + hours + " Hours, "
+    + minutes + " Minutes & " + seconds + " Seconds ";
 
-  // If the count down is finished, write some text
+  // If the countdown is finished, write some text
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("time").innerHTML = "EXPIRED";
+    document.getElementById("time").innerHTML = "Christmas is here!";
   }
-}, 1000);
+}, 1000); //End of set intervial (1000 = 1 second) 
 
+// Function to get the next Christmas date and define end point of timer
+function getNextChristmasDate() {
+  var today = new Date();
+  var christmasDate = new Date(today.getFullYear(), 11, 25); // Month is 0-based so December is 11 not 12
+
+  // If today is after Christmas, set the target date to next year
+  if (today > christmasDate) {
+    christmasDate.setFullYear(today.getFullYear() + 1);
+  }
+
+  return christmasDate;
+}
+//END OF COUNTDOWNTIMER FUNCTION
+
+//STRART OF DOM MANIPULATION TO DISPLAY AND HIDE THE COUNTDOWN TIMER
+//Once the button is clicked the change function is called, the following elements are called by their id and new display parameters are assigned
 function change() {
   document.getElementById('timer').style.display = 'contents';
   document.getElementById('time').style.display = 'contents';
@@ -158,6 +176,7 @@ function change() {
   document.getElementById('count').style.display = 'none';
 
 }
+//Once the button is clicked the back function is called, the following elements are called by their id and new display parameters are assigned
 function back(){
   document.getElementById('timer').style.display = 'none';
   document.getElementById('time').style.display = 'none';
@@ -165,6 +184,7 @@ function back(){
   document.getElementById('christmas').style.display = '';
   document.getElementById('count').style.display = 'block';
 }
+//.END OF DOM MANIPULATION TO DISPLAY AND HIDE COUNTDOWN TIMER
 
 /* 
   ---------- Flaviu Vanca, Student ID: 22195092 -----------
