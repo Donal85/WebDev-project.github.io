@@ -1,4 +1,13 @@
-//------------------Donal Dempsey script----------------------
+//------------------Donal Dempsey, student ID: 23122200 script----------------------
+/*
+The following code creates a random number mini game located on the index page of our site.
+The code creates a new random number on each play
+confirms correct number range has been entered
+sets the display parameters based on button click's
+countsdown the attempts the user has made
+validates the users guess against the generated random number
+displays results and clues to the user
+ */
 //START MINI GAME SCRIPT
 
 //Declares variables 
@@ -27,34 +36,37 @@ function startGame() {
 
 // Function called when user enters their guess
 function checkGuess() {
-    // Get the user's guess from the input
-    userGuess = parseInt(document.getElementById('guessInput').value);
-
+  // Get the user's guess from the input
+  userGuess = parseInt(document.getElementById('guessInput').value);
+  // Check if the user's guess is within the range of 1-10
+  if (userGuess >= 1 && userGuess <= 10) {
     // Checks if the user has attempts left
     if (attemptsLeft > 0) {
-    // Reduces users remaing guess' after each attempt
-        attemptsLeft--;
+      // Reduces users remaing guess' after each attempt
+      attemptsLeft--;
+      // Check's if the users guess is correct and displays the message if it is (will also call the endGame function if user is correct)
+      if (userGuess === randomNumber) {
+        document.getElementById('result').innerHTML = "SUCCESS! <br>" +randomNumber+ " is the correct number!";
+        endGame();
+      }else {
+        // works out and tells the user whether their guess is too high or too low (if the statement is true, too low is displayed otherwise, too high is displayed)
+        message = userGuess < randomNumber ? 'too low!' : 'too high!';
+        document.getElementById('result').innerHTML = "Incorrect guess! "+userGuess+ " is " +message+ "<br>You have " +attemptsLeft+ " attempt(s) left: " ;
+      }
 
-        // Check's if the users guess is correct and displays the message if it is (will also call the endGame function if user is correct)
-        if (userGuess === randomNumber) {
-            document.getElementById('result').innerHTML = "SUCCESS! <br>" +randomNumber+ " is the correct number!";
-            endGame();
-        } 
-        else {
-            // works out and tells the user whether their guess is too high or too low (if the statement is true, too low is displayed otherwise, too high is displayed)
-            message = userGuess < randomNumber ? 'too low!' : 'too high!';
-            document.getElementById('result').innerHTML = "Incorrect guess! "+userGuess+ " is " +message+ "<br>You have " +attemptsLeft+ " attempt(s) left: " ;
-        }
+      // Updates the attempts display to show the user how many trys they have left
+      document.getElementById('attempts').textContent = attemptsLeft;
 
-        // Updates the attempts display to show the user how many trys they have left
-        document.getElementById('attempts').textContent = attemptsLeft;
-
-        // Check's if the user is out of try's and displays the message if so (will also call the endGame function if user is out of trys)
-        if (attemptsLeft == 0 && userGuess !== randomNumber) {
-                document.getElementById('result').innerHTML ="Oh no! You're out of luck!<br>The correct number was: " +randomNumber;
-                endGame();
-        }
+      // Check's if the user is out of try's and displays the message if so (will also call the endGame function if user is out of trys)
+      if (attemptsLeft == 0 && userGuess !== randomNumber) {
+        document.getElementById('result').innerHTML ="Oh no! You're out of luck!<br>The correct number was: " +randomNumber;
+        endGame();
+      }
     }
+  }else {
+        // Display an error message if the user's guess is outside the range
+        document.getElementById('result').innerHTML = "Please enter a number between 1 and 10.";
+  } 
 }
 
 // Shows the "Play Again" button after the game has finished
@@ -80,46 +92,62 @@ function playAgain() {
 
 //START OF TEXT OVER IMAGES SCRIPT
 
+/*
+The following code creates a DOM manipulation that displays text over images within carousels on our site
+The code assigns event listners for mouseover and mouse out
+sets display parameters based on which eventlistner is being activated
+*/
+
 //addEventListner allows me to specify the function to look out for a certain event within the html
 //DOMContentLoaded ensures script will not run until after the html is fully loaded
 document.addEventListener('DOMContentLoaded', function () {
-    // query.SelectorAll targets all elements with the class 'carousel-item'
-    var carouselItems = document.querySelectorAll('.carousel-item');
-    // Loop's through each 'carousel-item' element
-    carouselItems.forEach(function(carouselItem) {
-      // Add's event listeners and allocates a function for each 'carousel-item' in this case, mouseover & mouseout
-      carouselItem.addEventListener('mouseover', function () {
-        showCaption(carouselItem);
-      }); //closes addEventListner-mouseover & function
+  // query.SelectorAll targets all elements with the class 'carousel-item'
+  var carouselItems = document.querySelectorAll('.carousel-item');
+  // Loop's through each 'carousel-item' element
+  carouselItems.forEach(function(carouselItem) {
+    // Add's event listeners and allocates a function for each 'carousel-item' in this case, mouseover & mouseout
+    carouselItem.addEventListener('mouseover', function () {
+      showCaption(carouselItem);
+    }); //closes addEventListner-mouseover & function
   
-      carouselItem.addEventListener('mouseout', function () {
-        hideCaption(carouselItem);
-      }); //closes addEventListner-mouseout & function
-    }); //closes forEach-function
+    carouselItem.addEventListener('mouseout', function () {
+      hideCaption(carouselItem);
+    }); //closes addEventListner-mouseout & function
+  }); //closes forEach-function
 
-    //Calls the fuction after it is detected by the eventlisteners 
-    function showCaption(carouselItem) {
-      // Find the 'carousel-caption' within the current 'carousel-item'
-      var caption = carouselItem.querySelector('.carousel-caption');
-      if (caption) {
-        caption.style.display = 'block';
-      }
+  //Calls the fuction after it is detected by the eventlistener mouseover
+  function showCaption(carouselItem) {
+    // Find the 'carousel-caption' within the current 'carousel-item' and sets its display parameters
+    var caption = carouselItem.querySelector('.carousel-caption');
+    if (caption) {
+      caption.style.display = 'block';
     }
-  
-    function hideCaption(carouselItem) {
-      // Find the 'carousel-caption' within the current 'carousel-item'
-      var caption = carouselItem.querySelector('.carousel-caption');
-      if (caption) {
-        caption.style.display = 'none';
-      }
+  }
+  //Calls the fuction after it is detected by the eventlistener mouseout
+  function hideCaption(carouselItem) {
+    // Finds the 'carousel-caption' within the current 'carousel-item' and sets its display parameters
+    var caption = carouselItem.querySelector('.carousel-caption');
+    if (caption) {
+      caption.style.display = 'none';
     }
-  }); //closes addEventListener-DOMContentLoaded & function 
+  }
+}); //closes addEventListener-DOMContentLoaded & function 
 
 //END OF TEXT OVER IMAGE SCRIPT
 
+/*
+The following code creates a countdown timer for our seasonal page.
+The code creates a countdown timer set to christmas day
+confirms the remaining time until christmas day
+stores the timer within an id
+updates the timer every second
+displays a message on christmas day
+resets the timer each year after christmas day
+*/
+
 //START OF SEASONAL COUNTDOWN TIMER
 
-//knowledge and  some code obtained from https://www.w3schools.com/howto/howto_js_countdown.asp
+//some knowledge and some code obtained from https://www.w3schools.com/howto/howto_js_countdown.asp
 
 // Set the countdown date to Christmas Day
 var countDownDate = getNextChristmasDate().getTime();
@@ -166,8 +194,14 @@ function getNextChristmasDate() {
 }
 //END OF COUNTDOWNTIMER FUNCTION
 
+/*
+The following code creates a DOM manipulation for the countdown timer on the seasonal page
+The code sets display parameters based on button click
+the code will hide/display certasin elements based on which button the user clicks
+*/
+
 //STRART OF DOM MANIPULATION TO DISPLAY AND HIDE THE COUNTDOWN TIMER
-//Once the button is clicked the change function is called, the following elements are called by their id and new display parameters are assigned
+//Once the button is clicked, the change function is called, the following elements are called by their id and new display parameters are assigned
 function change() {
   document.getElementById('timer').style.display = 'contents';
   document.getElementById('time').style.display = 'contents';
@@ -176,7 +210,7 @@ function change() {
   document.getElementById('count').style.display = 'none';
 
 }
-//Once the button is clicked the back function is called, the following elements are called by their id and new display parameters are assigned
+//Once the button is clicked, the back function is called, the following elements are called by their id and new display parameters are assigned
 function back(){
   document.getElementById('timer').style.display = 'none';
   document.getElementById('time').style.display = 'none';
@@ -186,6 +220,7 @@ function back(){
 }
 //.END OF DOM MANIPULATION TO DISPLAY AND HIDE COUNTDOWN TIMER
 
+//------------------End of Donal Dempsey, student ID: 23122200 script----------------------
 /* 
   ---------- Flaviu Vanca, Student ID: 22195092 -----------
               ------- Form Validation -------

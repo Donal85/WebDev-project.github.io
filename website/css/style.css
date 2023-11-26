@@ -1,9 +1,9 @@
 /* copied fonts from google
-font-family: 'Dancing Script', cursive;
+font-family: 'Dancing Script';
 font-family: 'Fjalla One', sans-serif;
 font-family: 'Manrope', sans-serif;
 font-family: 'Overpass', sans-serif;
-font-family: 'UnifrakturMaguntia', cursive;
+font-family: 'UnifrakturMaguntia';
  */
 
 /*---------------Donal Dempsey STUDENT ID: 23122200 styling---------------------------*/
@@ -117,15 +117,28 @@ header h2 {
 #intro {
     text-align: center;
 }
-/*Sets the size of the text <p> within intro*/
-#intro p{
-    font-size: 26px;
-}
 /*Sets the size of the text for #welcome*/
 #welcome {
     font-size: 30px;
 }
-/*Sets the size and position of the images in the 1st coloumn of the carousel. Also curves the image borders*/
+/* Google font Overpass, sans-serif with a weight of 600 applied*/
+#aim{
+    font-family: 'Overpass', sans-serif;
+    font-weight: 600;
+}
+/* Google font Dancing Script with a size of 26px applied to introduction, center alligned with a padding added */
+.introduction{
+    font-size: 26px;
+    text-align: center;
+    padding-left: 250px;
+    padding-right: 250px;
+    font-family: 'Dancing Script';
+}
+/*Adds a bold affect to the name of the company within the introduction*/
+.name{
+    font-weight: bold;
+}
+/*Sets the size and position of the image in the 1st coloumn of the carousel. Also curves the image borders*/
 #homeleft{
     margin-left: 5%;
     border-radius: 20px;
@@ -167,6 +180,10 @@ header h2 {
 /*Hides the minigame until called by button click*/
 #minigame {
     display: none;
+}
+/*Changes the width og the number input box*/
+#guessInput{
+    width: 3em;
 }
 /*END OF MINI GAME STYLING*/
 
