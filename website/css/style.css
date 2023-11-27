@@ -3,7 +3,6 @@ font-family: 'Dancing Script';
 font-family: 'Fjalla One', sans-serif;
 font-family: 'Manrope', sans-serif;
 font-family: 'Overpass', sans-serif;
-font-family: 'UnifrakturMaguntia';
  */
 
 /*---------------Donal Dempsey STUDENT ID: 23122200 styling---------------------------*/
@@ -23,6 +22,7 @@ header{
     text-align: center;
     margin-right: 1%;
 }
+/* knowledge used https://www.w3schools.blog/linear-gradient-on-text*/
 /*Sets the size, style and position of the h1 text. */
 header h1 {
     font-family: 'Manrope', sans-serif;
