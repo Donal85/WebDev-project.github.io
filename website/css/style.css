@@ -87,10 +87,6 @@ header h2 {
 .links :hover{
     color: gold;
 }
-/*Whichever page the user is on will be highlighted in a different background color as a visual cue*/
-.current{
-    background-color: rgb(94, 94, 193);
-}
 /*Google font Fjalla One with a size of 22px applied to navbar order-form link and Floats the link within the navbar to the right*/
 .infolink {
     font-family: 'Fjalla One', sans-serif;
@@ -107,6 +103,28 @@ header h2 {
 }
 /*Causes the text of the order-form link within the navbar to change to gold on mouse over*/
 .infolink :hover{
+    color: gold;
+}
+/*Whichever page the user is on will be highlighted in a different background color as a visual cue*/
+.current{
+    background-color: rgb(94, 94, 193);
+}
+/*Google font Fjalla One with a size of 22px applied to navbar contact info link and Floats the link within the navbar to the right*/
+.contactinfo{
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 22px;
+    float: right;
+}
+/*Sets the size, style and colour of the contact info link within the nav bar*/
+.contactinfo a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+/*Causes the text of the contact info link within the navbar to change to gold on mouse over*/
+.contactinfo :hover{
     color: gold;
 }
 /*END OF NAV BAR STYLES*/
