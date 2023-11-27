@@ -52,28 +52,29 @@
             <li class="infolink"><a class="current" href="order-form.html">Order-Form</a></li>
         </ul>
     </nav>
+    <!--Flaviu Vanca Student ID:22195092-->
     <div id="div_form">
         <form id="form" name="cake order form">
             <h3 id="contact">Order-Form</h3>
             <br>
-            <!--the for attribute is for when we click the Name literal the input wich is referenced 
+            <!--tThe for attribute is for when we click the Name literal the input wich is referenced 
             will be automaticaly selected 
             -use superscript tag for * to represent the mandatory field
             -->
             <label id="name_label" for="name"><b><sup>*</sup>Name:</b></label>
-            <!--required means the field must NOTs be left empty-->
+            <!--Required means the field must NOTs be left empty-->
             <input id="name" type="text" size="30" placeholder="name..." />
             <br>
-            <!--use superscript tag for * to represent the mandatory field -->
+            <!--Use superscript tag for * to represent the mandatory field -->
             <label id="address_label" for="address"><b><sup>*</sup>Address:</b></label>
             <input id="address" type="text" size="30" placeholder="address..." />
             <br>
-            <!--use superscript tag for * to represent the mandatory field -->
+            <!--Use superscript tag for * to represent the mandatory field -->
             <label id="phone_number_label" for="phone_number"><b><sup>*</sup>Phone Number:</b></label>
-            <!--phone number input-->
+            <!--Phone number input-->
             <input id="phone_number" type="tel" name="phone_input" size="30" placeholder="phone number..." />
             <br>
-            <!-- Email Label and input-->
+            <!--Email Label and input-->
             <label id="email_label" for="email"><b>Email:</b></label>
             <input id="email" type="email"  size="30" placeholder="email..." name="email_input"/>
             <br>
@@ -108,7 +109,7 @@
                     <option value="wedding_cake_7">Crystal Cascade Celebration</option>
                     <option value="wedding_cake_8">Sculpted Elegance Splendor</option>
                 </optgroup>
-                <!-- Occasions Category -->
+                <!--Occasions Category-->
                 <optgroup label="Occasions">
                 <!--Options-->
                     <option value="anniversary_cake">Marzipan Birthday Cake</option>
@@ -126,7 +127,7 @@
                     <option value="luxury_cake_4">Regal Rhapsody</option>
                     <option value="luxury_cake_5">Cocoa Enchantment</option>
                 </optgroup>
-                <!-- Desserts Category -->
+                <!--Desserts Category-->
                 <optgroup label="Desserts">
                     <!--Options-->
                     <option value="dessert">Lemon Cheesecake</option>
@@ -155,7 +156,7 @@
             </select>
             <br>
             <br>
-            <!-- Quantity Selection -->
+            <!--Quantity Selection-->
             <label id="quantity_label" for="quantity"><b><sup>*</sup>Quantity:</b></label>
             <input type="number" name="quantity" id="quantity" min="1" max="100" value="1">
             <br>
@@ -170,7 +171,7 @@
             <p class="terms_newsletter">
                 <!--Terms and Conditions-->
                 <input id="terms_conditions" type="checkbox" name="tc" />
-                <span><b><sup>*</sup>Terms and Conditions</b></span>
+                <span><sup><b>*</b></sup><a id="terms_and_conditions_link" href="#"><b>Terms and Conditions</b></a></span>
             </p>
             <p class="terms_newsletter">
                 <!--Subscribe to Monthly Newsletter-->
@@ -178,13 +179,62 @@
                 <span><b id="newletter_b">Subscribe to Monthly Newsletter</b></span>
             </p>
             <br>
-            <!--use superscript tag for * to represent the mandatory field -->
+            <!--Use superscript tag for * to represent the mandatory field -->
             <span><em><sup>*</sup>mandatory</em></span>
             <br>
             <br>
             <!--Button to Submit the  form-->
             <button id="cake_button" type="submit">Submit</button>
         </form>
+        <!--Display the Terms and Conditions using Bootstraps Modal page-->
+        <div class="modal fade" id="custom_modal" tabindex="-1" aria-labelledby="custom_modal_label" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <!--Title of the modal page-->
+                        <h4 class="modal-title"><b>Terms and Conditions</b></h4>
+                        </div>
+                            <div class="modal-body">
+                                <!--Terms and Conditions-->
+                                <p><b><em>Welcome to Pastry Paradise, your go-to destination for exquisite cakes and delightful treats. By placing an order with us, you agree to the following terms and conditions:</em></b></p>
+                                <!--Ordering and Payments-->    
+                                <h5>Ordering and Payments</h5>
+                                <p>1. All orders must be placed through our website or in-person at our store. We do not accept orders through social media or phone calls.</p>
+                                <p>2. Payment must be made in full at the time of placing the order. We accept online payments through secure channels.</p>
+                                <p>3. Custom orders require a minimum of 3 days' notice. Changes to orders are subject to approval and may incur additional charges.</p>
+                                <!--Delivery and Pickup-->
+                                <h5>Delivery and Pickup</h5>
+                                <p>1. We offer delivery services within a specified radius. Delivery fees may apply based on the delivery location.</p>
+                                <p>2. Customers are responsible for providing accurate delivery details. We are not liable for delays or failed deliveries due to inaccurate information.</p>
+                                <p>3. Pickup orders must be collected at the agreed-upon time. Cakes left unclaimed for more than 24 hours may be discarded, and no refunds will be provided.</p>
+                                <!--Quality and Satisfaction-->
+                                <h5>Quality and Satisfaction</h5>
+                                <p>1. We take pride in crafting high-quality cakes. If you are dissatisfied with your order, please contact us within 24 hours, and we will address your concerns promptly.</p>
+                                <p>2. We reserve the right to make minor design adjustments to meet quality standards without prior notice.</p>
+                                <!--Cancellations and Refunds-->
+                                <h5>Cancellations and Refunds</h5>
+                                <p>1. Cancellations are accepted 3 days before the scheduled pickup or delivery date. A cancellation fee may apply.</p>
+                                <p>2. No refunds will be provided for cancellations made within 2 days of the scheduled date.</p>
+                                <!--Allergies and Dietary Restrictions-->
+                                <h5>Allergies and Dietary Restrictions</h5>
+                                <p>1. While we strive to accommodate allergies and dietary restrictions, our kitchen handles various ingredients, and we cannot guarantee an allergen-free environment.</p>
+                                <p>2. Customers with severe allergies are advised to exercise caution and contact us for detailed ingredient information.</p>
+                                <!--Privacy Policy-->
+                                <h5>Privacy Policy</h5>
+                                <p>1. We respect your privacy. Personal information provided during the ordering process will be securely stored and used solely for order fulfillment purposes.</p>
+                                <p>2. We do not share customer information with third parties without explicit consent.</p>
+                                <!--Changes to Terms and Conditions-->
+                                <h5>Changes to Terms and Conditions</h5>
+                                <p>We reserve the right to update and modify these terms and conditions at any time. Customers will be notified of significant changes.</p>
+
+                                <p><b>Thank you for choosing Pastry Paradise. We look forward to sweetening your special moments with our delectable creations!</b></p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" data-bs-dismiss="modal">Close</button>
+                            </div>
+                    </div>
+                </div>
+        </div>
     </div>
     <br>
     <!--Footer by Donal Dempsey Student Id 23122200-->

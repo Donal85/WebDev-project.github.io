@@ -324,13 +324,14 @@ header h2 {
 /*END OF CAROUSEL TEXT STYLING*/
 /*----------------------End of Donal Dempsey Styling-----------------------------------*/
 
+
 /*----------------------Flaviu Vanca Student ID:22195092 - Stylying--------------------*/
 /* ORDER-FORM STYLING */
 #div_form {
    display: flex;
    justify-content:center;
 }
-/* form border, border-radius, padding and text alignment */
+/*Form border, border-radius, padding and text alignment */
 #form {
     border: #000000 solid 1px;
     width: 440px;
@@ -338,7 +339,7 @@ header h2 {
     padding: 10px;
     text-align: left;
 }
-/*  h3 title Order-Form */
+/*h3 title Order-Form */
 #contact {
     text-align: center;
     font-family: 'Manrope', 'Fjalla One', sans-serif;
@@ -381,11 +382,11 @@ label {
     display: inline;
     margin-left: 5px;
 }
-/* set the width of cake option goup */
+/*Set the width of cake option goup */
 #category {
     width: 110px;
 }
-/* style the buttons */ 
+/*Style the buttons */ 
 button {
     width: 100px;
     padding: 5px;
@@ -394,34 +395,56 @@ button {
     text-align: center;
     font-weight: 700;
     display: block;
-    margin: 0 auto;/* position the button in the middle of the form */
+    margin: 0 auto;/*Position the button in the middle of the form */
 }
-/* set the margin to 0 for terms and newsletter paragraph*/
+/*Set the margin to 0 for terms and newsletter paragraph*/
 .terms_newsletter  {
     margin: 0px;
 }
-/* arrange the phrase to be on the same line wiht the above phrase (Terms and Conditions)*/
+/*Srrange the phrase to be on the same line wiht the above phrase (Terms and Conditions)*/
 #newletter_b {
     margin-left: 5px;
 }
+/*Style terms and conditions link */
+#terms_and_conditions_link {
+    text-decoration: none;
+    color: #000000;
+  
+}
+#terms_and_conditions_link:hover {
+    color:goldenrod;
+}
 /* END OF ORDER-FORM STYLING */
+
+/*Modal styling */
+.modal-content {
+    background-color: #f5f5f5;
+}
+.modal-header {
+    background-color: #5bc0de; /*Customize the header background color */
+    color: #000000; /* Customize the header text color */
+    border-bottom: 2px solid #dddddd; 
+}
+.modal-body {
+    padding: 20px;  
+}
 
 /* STYLE THE CAROUSEL AND IMAGES */
 .carousel-item {
     position:relative;
     text-align: center;
 }
-/* set the images to a hight of 550px */
+/*Set the images to a hight of 550px */
 .imgs {    
     border: goldenrod solid 2px;
     border-radius: 20px;
     height: 550px;   
 }
-/* Style the h3 class from the pages with the carousel */
+/*Style the h3 class from the pages with the carousel */
 .subtitle{
     text-align: center;
 }
-/* Style the paragraphs from the pages with the carousel */
+/*Style the paragraphs from the pages with the carousel */
 .paragraphs{
     text-align: center;
 }
@@ -431,7 +454,7 @@ button {
     font-weight: normal;
     text-align: center;
 }
-/* Style the paragraphs from the slides*/
+/*Style the paragraphs from the slides*/
 .paragraphs {
     text-align: justify;
     padding-left: 250px;
@@ -441,3 +464,5 @@ button {
     font-size:x-large;
 }
 /* END OF STYLE THE CAROUSEL AND IMAGES */
+
+
