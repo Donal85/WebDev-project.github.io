@@ -379,3 +379,15 @@ document.addEventListener('DOMContentLoaded', function () {
     customModal.show();//Show the Modal
   });
 });
+
+/*Add and Event Listener to Display the Contact Modal*/
+ document.addEventListener('DOMContentLoaded', function () {
+    var contactLink = document.querySelector('.contactinfo a');
+    var modal = new bootstrap.Modal(document.getElementById('custom_modal_index'));
+
+    contactLink.addEventListener('click', function (event) {
+      event.preventDefault();
+      modal.show();
+    });
+  });
+  

@@ -434,7 +434,7 @@ button {
 }
 /* END OF ORDER-FORM STYLING */
 
-/*Modal styling */
+/*Modal styling Terms ans Conditions */
 .modal-content {
     background-color: #f5f5f5;
 }
@@ -446,6 +446,7 @@ button {
 .modal-body {
     padding: 20px;  
 }
+
 
 /* STYLE THE CAROUSEL AND IMAGES */
 .carousel-item {
