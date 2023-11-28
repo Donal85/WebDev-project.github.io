@@ -146,7 +146,7 @@ header h2 {
     font-weight: 600;
 }
 /* Google font Dancing Script with a size of 26px applied to introduction, center alligned with a padding added */
-.introduction{
+#introduction{
     font-size: 26px;
     text-align: center;
     padding-left: 250px;
