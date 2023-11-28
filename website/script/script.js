@@ -224,11 +224,10 @@ function back() {
 
 
 
-/* 
-  ---------- Flaviu Vanca, Student ID: 22195092 -----------
-              ------- Form Validation -------
-*/
-/* 
+/* ---------- Flaviu Vanca, Student ID: 22195092 ----------- */
+//--------------------------------------------------------------------------------------------------------------------
+/*  ********** FORM VALIDATION ********** */
+/*  
   Syntax: target.addEventListener(type, listener);
   -The event listener is added to manipulate the elements
   -The method accepts 2 parameters. The first one is the type and second one is the listener, 
@@ -324,9 +323,13 @@ document.addEventListener('DOMContentLoaded',function () {
     form.reset();
   });
 });
+
 /*  ********** END OF FORM VALIDATION ********** */
 
+//--------------------------------------------------------------------------------------------------------------------
+
 /* ********** STYLE THE PREVIOUS AND NEXT SLIDE ICONS ********** */
+
 document.addEventListener('DOMContentLoaded',function () {
   //Get the previous and next slide icons
   var prevIcon = document.querySelector('.carousel-control-prev-icon');
@@ -340,12 +343,12 @@ document.addEventListener('DOMContentLoaded',function () {
 
   //Add hover effect for the previous slide icon
   prevIcon.addEventListener('mouseover',function () {
-    prevIcon.style.boxShadow = 'goldenrod 0px 0px 2px 2px';
+    prevIcon.style.boxShadow = 'goldenrod 0px 0px 2px 2px';//Add box shadow
   });
 
   //Remove hover effect when not hovered
   prevIcon.addEventListener('mouseout',function () {
-    prevIcon.style.boxShadow = 'none';
+    prevIcon.style.boxShadow = 'none';//Remove the box shadow
   });
 
   //Styles for the next slide icon
@@ -356,38 +359,48 @@ document.addEventListener('DOMContentLoaded',function () {
 
   //Add hover effect for the next slide icon
   nextIcon.addEventListener('mouseover',function () {
-    nextIcon.style.boxShadow = 'goldenrod 0px 0px 2px 2px';
+    nextIcon.style.boxShadow = 'goldenrod 0px 0px 2px 2px';//Add box shadow
   });
 
   //Remove hover effect when not hovered
   nextIcon.addEventListener('mouseout',function () {
-    nextIcon.style.boxShadow = 'none';
+    nextIcon.style.boxShadow = 'none';//Remove the box shadow
   });
 
 });
+
 /* ********** END STYLE OF THE PREVIOUS AND NEXT SLIDE ICONS ********** */
 
-/*Add and Event Listener to Display the Terms and Conditionas Modal*/
+//--------------------------------------------------------------------------------------------------------------------
+
+/* ********** Event Listener to Display the Terms and Conditionas Modal ********** */
+
 document.addEventListener('DOMContentLoaded', function () {
   //Retrieve the modal element
   var customModal = new bootstrap.Modal(document.getElementById('custom_modal'));
-
   //Add click event listener to the "Terms and Conditions" link to show the custom modal
   var termsAndConditionsLink = document.getElementById('terms_and_conditions_link');
+  //Event listener with click type and anonymous function
   termsAndConditionsLink.addEventListener('click', function (event) {
-    event.preventDefault(); //Prevent the default behavior of the link
-    customModal.show();//Show the Modal
+    event.preventDefault();//Prevent the default behavior of the link
+    customModal.show();//Display the Modal
   });
 });
+/* ********** END Event Listener to Display the Terms and Conditionas Modal ********** */
 
-/*Add and Event Listener to Display the Contact Modal*/
+/* ********** Event Listener to Display the Contact Modal ********** */
  document.addEventListener('DOMContentLoaded', function () {
+    //Select the element with the name contactinfo and then find the first anchor element in it.
     var contactLink = document.querySelector('.contactinfo a');
+    //Retrieve the modal element
     var modal = new bootstrap.Modal(document.getElementById('custom_modal_index'));
-
+    //Event listener with click type and anonymous function
     contactLink.addEventListener('click', function (event) {
-      event.preventDefault();
-      modal.show();
+      event.preventDefault();//Prevent the default behavior of the link
+      modal.show();//Display the Modal
     });
   });
   
+  /* ********** END Event Listener to Display the Contact Modal ********** */
+
+  //--------------------------------------------------------------------------------------------------------------------
