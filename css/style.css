@@ -240,7 +240,7 @@ header h2 {
 #seasonal {
     /*--Image credit-- <a href="https://unsplash.com/@amyshamblen?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Amy Shamblen</a>
     on <a href="https://unsplash.com/photos/green-and-red-baubles-x2lm26Rs2PM?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>*/
-    background-image: url("../images/backgrounds/christmas1.jpg");
+    background-image: url("./images/backgrounds/christmas1.jpg");
 }
 /*Sets the size and position of the images in the 1st and 3rd coloumn's of the carousel. Also styles the image borders*/
 .side{
