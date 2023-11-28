@@ -52,6 +52,7 @@ header h2 {
     display: inline-flex;
     float: left;
     width: 70px;
+    height: 70px;
     margin-top: 1%;
     margin-left: 1%;
 }
