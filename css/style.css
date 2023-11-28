@@ -132,9 +132,11 @@ header h2 {
 
 /*START OF INDEX PAGE STYLING*/
 
-/*Sets the position of the text within intro*/
+/*Sets the size and position of the div and sets the position of the text within intro*/
 #intro {
     text-align: center;
+    width: 80%;
+    margin: auto;
 }
 /*Sets the size of the text for #welcome*/
 #welcome {
@@ -148,9 +150,6 @@ header h2 {
 /* Google font Dancing Script with a size of 26px applied to introduction, center alligned with a padding added */
 #introduction{
     font-size: 26px;
-    text-align: center;
-    padding-left: 250px;
-    padding-right: 250px;
     font-family: 'Dancing Script';
 }
 /*Adds a bold affect to the name of the company within the introduction*/
