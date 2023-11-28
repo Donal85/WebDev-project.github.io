@@ -218,7 +218,7 @@ function back() {
   document.getElementById('christmas').style.display = '';
   document.getElementById('count').style.display = 'block';
 }
-//.END OF DOM MANIPULATION TO DISPLAY AND HIDE COUNTDOWN TIMER
+//END OF DOM MANIPULATION TO DISPLAY AND HIDE COUNTDOWN TIMER
 
 //------------------End of Donal Dempsey, student ID: 23122200 script----------------------
 
