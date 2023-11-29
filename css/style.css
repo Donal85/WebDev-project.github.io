@@ -189,6 +189,10 @@ nav select {
     width: 80%;
     height: 650px;
 }
+@media (max-width: 960px) {
+    .cake     { height: 400px; }
+    
+}
 /*Adjusts the images for mobile's*/
 
 /*Sets the size and position of the text within .tag*/
