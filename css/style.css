@@ -289,8 +289,8 @@ nav select {
     height: 550px;
 }
 @media (max-width: 960px) {
-    .season { height: auto; }
-    .season { width: auto;}
+    .season { height: 400px;}
+    .season { width: 80%;}
 }
 /*Google font Overpass used*/
 /*Sets the style and size of text for the #tis h4*/
