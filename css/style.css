@@ -192,7 +192,7 @@ nav select {
 @media (max-width: 960px) {
     .cake { width: 80%; }
     .cake { height: 60%;}
-    .cake { margin-right: 8%;}
+    .cake { margin-right: 9%;}
 }
 /*Adjusts the images for mobile's*/
 
@@ -291,6 +291,11 @@ nav select {
     margin-right: 2%;
     width: 96%;
     height: 550px;
+}
+@media (max-width: 960px) {
+    .season { width: 80%; }
+    .season { height: 60%;}
+    .season { margin-right: 9%;}
 }
 
 /*Google font Overpass used*/
