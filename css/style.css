@@ -482,11 +482,14 @@ button {
     padding: 20px;  
 }
 
-
 /* STYLE THE CAROUSEL AND IMAGES */
 .carousel-item {
     position:relative;
     text-align: center;
+}
+@media (max-width: 600px) {
+    .carousel-item { height: 200px;}
+    .carousel-item { width: 60%;}
 }
 /*Set the images to a hight of 550px */
 .imgs {    
