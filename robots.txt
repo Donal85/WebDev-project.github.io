@@ -1,0 +1,15 @@
+User-agent: *
+Disallow: /script/
+Disallow: /css/
+Allow: /images/
+Allow: /cupcakes.html
+Allow: /dessert.html
+Allow: /donal85.github.io_sitemap_1.xml
+Allow: /favicon.ico
+Allow: /index.html
+Allow: /luxury.html
+Allow: /occasions.html
+Allow: /order-form.html
+Allow: /seasonal.html
+Allow: /robots.txt
+Allow: /wedding.html
