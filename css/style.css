@@ -488,7 +488,7 @@ button {
 }
 
 /*Set the images to a hight of 550px */
-.imgs {    
+.imgs, .w_imgs {    
     border: goldenrod solid 2px;
     border-radius: 20px;
     width: fit-content;
