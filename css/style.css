@@ -483,7 +483,7 @@ button {
 .imgs {    
     border: goldenrod solid 2px;
     border-radius: 20px;
-    width: 80%;
+    width: 50%;
     height: 550px;   
 }
 /*Style the h3 class from the pages with the carousel */
