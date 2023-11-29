@@ -492,7 +492,7 @@ button {
 .imgs {    
     border: goldenrod solid 2px;
     border-radius: 20px;
-    width: fit-content;
+    
     height: 500px;   
 }
 @media (max-width: 600px) {
