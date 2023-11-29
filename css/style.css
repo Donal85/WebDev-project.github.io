@@ -189,8 +189,10 @@ nav select {
     width: 80%;
     height: 650px;
 }
+/*Adjusts the images for mobile's*/
 @media (max-width: 960px) {
     .cake { height: auto; }
+    .cake { width: auto;}
 }
 /*Sets the size and position of the text within .tag*/
 #tag{
@@ -285,6 +287,10 @@ nav select {
     margin-right: 2%;
     width: 96%;
     height: 550px;
+}
+@media (max-width: 960px) {
+    .season { height: auto; }
+    .season { width: auto;}
 }
 /*Google font Overpass used*/
 /*Sets the style and size of text for the #tis h4*/
