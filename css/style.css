@@ -372,6 +372,7 @@ nav select {
 /*Displays the text reserved for mouse over on a mobile device */
 @media (max-width: 960px) {
     .carousel-caption { display: block; }
+    .carousel-caption { font-size: 12px; }
 }
 /*END OF CAROUSEL TEXT STYLING*/
 
