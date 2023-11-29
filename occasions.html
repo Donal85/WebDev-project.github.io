@@ -50,16 +50,30 @@
       <li class="links"><a href="dessert.html">Desserts</a></li>
       <li class="links"><a href="cupcakes.html">Cup-Cakes</a></li>
       <li class="infolink"><a href="order-form.html">Order-Form</a></li>
-      <!--Links to the contact button on the index page-->
+      <!--Displays the contact information to the user-->
       <li class="contactinfo"><a href="#contact">Contact-Info</a></li>
     </ul>
+    <!--Creates a drop down nav bar that will be visable on smaller screens and devices-->
+    <select id="pageDropdown" onchange="navigateToPage()">  
+      <option value="occasions.html">Occasions</option>
+      <option value="index.html">Home</option> 
+      <option value="luxury.html">Luxury</option> 
+      <option value="wedding.html">Weddings</option> 
+      <option value="seasonal.html">Seasonal</option> 
+      <option value="dessert.html">Desserts</option> 
+      <option value="cupcakes.html">Cup-Cakes</option> 
+      <option value="order-form.html">Order-Form</option> 
+      <option value="#contact">Contact-Info</option> 
+    </select>
   </nav>
     <!-- Subtitle, Paragraph and Bootsrtap carousel - Flaviu Vanca Student ID:22195092 -->
   <main>
-    <h3 class="subtitle"><b>Occasions Cakes</b></h3>
-    <p class="paragraphs">
-      From birthdays to anniversaries, baby showers to graduations and engagements, Pastry Paradise understands the importance of every occasion. Customize your cake with personalized decorations, from edible photo prints to thematic designs that mirror the essence of your celebration. Let Pastry Paradise be a part of your special moments, transforming them into edible works of art that mirror the significance of the day. Trust us to add the perfect touch of sweetness to your occasions, making every slice a moment to savour. Pastry Paradise - where every celebration deserves a cake as unique as the moment itself. Indulge in the magic of unforgettable occasions!
-    </p>
+    <div class="intro">
+      <h3 class="subtitle"><b>Occasions Cakes</b></h3>
+      <p class="paragraphs">
+        From birthdays to anniversaries, baby showers to graduations and engagements, Pastry Paradise understands the importance of every occasion. Customize your cake with personalized decorations, from edible photo prints to thematic designs that mirror the essence of your celebration. Let Pastry Paradise be a part of your special moments, transforming them into edible works of art that mirror the significance of the day. Trust us to add the perfect touch of sweetness to your occasions, making every slice a moment to savour. Pastry Paradise - where every celebration deserves a cake as unique as the moment itself. Indulge in the magic of unforgettable occasions!
+      </p>
+    </div>
     <!--Bootsrtap carousel code Flaviu Vanca Student ID:22195092-->
     <div id="indicators" class="carousel slide">
       <div class="carousel-indicators">

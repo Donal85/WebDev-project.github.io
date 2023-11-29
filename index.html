@@ -51,13 +51,25 @@
       <li class="links"><a href="dessert.html">Desserts</a></li>
       <li class="links"><a href="cupcakes.html">Cup-Cakes</a></li>
       <li class="infolink"><a href="order-form.html">Order-Form</a></li>
-      <!--Links to the contact button on the index page-->
+      <!--Displays the contact information to the user-->
       <li class="contactinfo"><a href="#contact">Contact-Info</a></li>
     </ul>
+    <!--Creates a drop down nav bar that will be visable on smaller screens and devices-->
+    <select id="pageDropdown" onchange="navigateToPage()">  
+      <option value="index.html">Home</option> 
+      <option value="occasions.html">Occasions</option>
+      <option value="luxury.html">Luxury</option> 
+      <option value="wedding.html">Weddings</option> 
+      <option value="seasonal.html">Seasonal</option> 
+      <option value="dessert.html">Desserts</option> 
+      <option value="cupcakes.html">Cup-Cakes</option> 
+      <option value="order-form.html">Order-Form</option> 
+      <option value="#contact">Contact-Info</option> 
+    </select> 
   </nav>
   <br>
   <main>
-    <div id="intro">
+    <div class="intro">
       <h2 id="welcome"><em>Welcome to Pastry Paradise!</em></h2>
       <h4 id="aim"> We aim to meet all your cake celebration needs!</h4>
       <br>

@@ -128,12 +128,27 @@ header h2 {
 .contactinfo :hover{
     color: gold;
 }
+
+nav select {
+    display: none;
+    min-width: 200px;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 22px;
+    padding: 10px 12px;
+    color: white;
+    background-color: gray;;
+}
+
+@media (max-width: 960px) {
+    nav ul     { display: none; }
+    nav select { display: inline-block; }
+}
 /*END OF NAV BAR STYLES*/
 
 /*START OF INDEX PAGE STYLING*/
 
 /*Sets the size and position of the div and sets the position of the text within intro*/
-#intro {
+.intro {
     text-align: center;
     width: 80%;
     margin: auto;
@@ -159,6 +174,7 @@ header h2 {
 /*Sets the size and position of the image in the 1st coloumn of the carousel. Also curves the image borders*/
 #homeleft{
     margin-left: 5%;
+    margin-right: 5%;
     border-radius: 20px;
     width: 80%;
     height: 90%;
@@ -475,9 +491,7 @@ button {
 }
 /*Style the paragraphs from the slides*/
 .paragraphs {
-    text-align: justify;
-    padding-left: 250px;
-    padding-right: 250px;
+    text-align: center;
     font-family: 'Dancing Script','Fjalla One','Manrope',  sans-serif;
     font-weight: normal;
     font-size:x-large;

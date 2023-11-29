@@ -50,16 +50,30 @@
       <!--The current tag will highlight to user which page they are on-->
       <li class="links"><a class="current" href="cupcakes.html">Cup-Cakes</a></li>
       <li class="infolink"><a href="order-form.html">Order-Form</a></li> 
-      <!--Links to the contact button on the index page-->
+      <!--Displays the contact information to the user-->
       <li class="contactinfo"><a href="#contact">Contact-Info</a></li>
     </ul>
+    <!--Creates a drop down nav bar that will be visable on smaller screens and devices-->
+    <select id="pageDropdown" onchange="navigateToPage()"> 
+      <option value="cupcakes.html">Cup-Cakes</option>
+      <option value="index.html">Home</option> 
+      <option value="occasions.html">Occasions</option>
+      <option value="luxury.html">Luxury</option> 
+      <option value="wedding.html">Weddings</option> 
+      <option value="seasonal.html">Seasonal</option> 
+      <option value="dessert.html">Desserts</option>  
+      <option value="order-form.html">Order-Form</option> 
+      <option value="#contact">Contact-Info</option> 
+    </select>
   </nav>
   <!-- Subtitle, Paragraph and Bootsrtap carousel - Flaviu Vanca Student ID:22195092 -->
   <main>
-    <h3 class="subtitle"><b>Cupcakes</b></h3>
-    <p class="paragraphs">
-      Our cupcakes are not just desserts, they're an experience, a symphony of flavours that takes your taste buds on a journey of pure delight. Each cupcake at Pastry Paradise is a masterpiece, meticulously crafted to awaken the senses and transport you to a sweet haven. Join us in this sweet escapade, where every cupcake tells a story, and every bite is a moment of sheer bliss. Pastry Paradise - where the artistry of baking meets the joy of savouring.
-    </p>
+    <div class="intro">
+      <h3 class="subtitle"><b>Cupcakes</b></h3>
+      <p class="paragraphs">
+        Our cupcakes are not just desserts, they're an experience, a symphony of flavours that takes your taste buds on a journey of pure delight. Each cupcake at Pastry Paradise is a masterpiece, meticulously crafted to awaken the senses and transport you to a sweet haven. Join us in this sweet escapade, where every cupcake tells a story, and every bite is a moment of sheer bliss. Pastry Paradise - where the artistry of baking meets the joy of savouring.
+      </p>
+    </div>
     <!--Bootsrtap carousel code Flaviu Vanca Student ID:22195092-->
     <div id="indicators" class="carousel slide">
       <div class="carousel-indicators">

@@ -1,4 +1,27 @@
 //------------------Donal Dempsey, student ID: 23122200 script----------------------
+
+/*
+The following script activates the links within the dropdown menu when it appears on
+a smaller screen size, it also conects with the contact infop modal to display the 
+contact info to the user
+ */
+
+//START DROP DOWN MENU SCRIPT
+//Calls the dropdown menu
+function navigateToPage() {
+  var selectedValue = document.getElementById("pageDropdown").value;
+
+  if (selectedValue.startsWith("#")) {
+      // If it's a hash link, show the contact modal (displays the contact info modal)
+      var modal = new bootstrap.Modal(document.getElementById('custom_modal_index'));
+      modal.show();
+  } else {
+      // If it's a standard page, redirect to the selected page
+      window.location.href = selectedValue;
+  }
+}
+//END DROP DOWN MENU SCRIPT
+
 /*
 The following code creates a random number mini game located on the index page of our site.
 The code creates a new random number on each play

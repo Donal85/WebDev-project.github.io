@@ -57,10 +57,23 @@
                 <li class="links"><a href="cupcakes.html">Cup-Cakes</a></li>
                 <!--The current tag will highlight to user which page they are on-->
                 <li class="infolink"><a class="current" href="order-form.html">Order-Form</a></li>
-                <!--Links to the contact button on the index page-->
+                <!--Displays the contact information to the user-->
                 <li class="contactinfo"><a href="#contact">Contact-Info</a></li>
             </ul>
+            <!--Creates a drop down nav bar that will be visable on smaller screens and devices-->
+            <select id="pageDropdown" onchange="navigateToPage()">  
+                <option value="index.html">Home</option> 
+                <option value="occasions.html">Occasions</option>
+                <option value="luxury.html">Luxury</option> 
+                <option value="wedding.html">Weddings</option> 
+                <option value="seasonal.html">Seasonal</option> 
+                <option value="dessert.html">Desserts</option> 
+                <option value="cupcakes.html">Cup-Cakes</option> 
+                <option value="order-form.html">Order-Form</option> 
+                <option value="#contact">Contact-Info</option> 
+            </select>
         </nav>
+        <br>
         <!--Flaviu Vanca Student ID:22195092-->
         <div id="div_form">
             <form id="form" name="cake order form">

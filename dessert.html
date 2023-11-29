@@ -50,16 +50,30 @@
       <li class="links"><a class="current" href="dessert.html">Desserts</a></li>
       <li class="links"><a href="cupcakes.html">Cup-Cakes</a></li>
       <li class="infolink"><a href="order-form.html">Order-Form</a></li>
-      <!--Links to the contact button on the index page-->
+      <!--Displays the contact information to the user-->
       <li class="contactinfo"><a href="#contact">Contact-Info</a></li>
     </ul>
+    <!--Creates a drop down nav bar that will be visable on smaller screens and devices-->
+    <select id="pageDropdown" onchange="navigateToPage()"> 
+      <option value="dessert.html">Desserts</option> 
+      <option value="index.html">Home</option> 
+      <option value="occasions.html">Occasions</option>
+      <option value="luxury.html">Luxury</option> 
+      <option value="wedding.html">Weddings</option> 
+      <option value="seasonal.html">Seasonal</option> 
+      <option value="cupcakes.html">Cup-Cakes</option> 
+      <option value="order-form.html">Order-Form</option> 
+      <option value="#contact">Contact-Info</option> 
+    </select>
   </nav>
   <!-- Subtitle, Paragraph and Bootsrtap carousel - Flaviu Vanca Student ID:22195092 -->
   <main>
-    <h3 class="subtitle"><b>Desserts</b></h3>
-    <p class="paragraphs">
-      At Pastry Paradise, we believe that desserts are not just the final course, they're the grand finale of a culinary journey. Our menu is a fusion of tradition and innovation, offering timeless classics alongside daring creations that push the boundaries of flavour. Join us in this delectable symphony of sweetness, where every dessert is a work of art, and every bite is a moment to remember. Pastry Paradise - where dessert dreams come to life. Embrace the sweetness!
-    </p>
+    <div class="intro">
+      <h3 class="subtitle"><b>Desserts</b></h3>
+      <p class="paragraphs">
+        At Pastry Paradise, we believe that desserts are not just the final course, they're the grand finale of a culinary journey. Our menu is a fusion of tradition and innovation, offering timeless classics alongside daring creations that push the boundaries of flavour. Join us in this delectable symphony of sweetness, where every dessert is a work of art, and every bite is a moment to remember. Pastry Paradise - where dessert dreams come to life. Embrace the sweetness!
+      </p>
+    </div>
     <div id="indicators" class="carousel slide">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#indicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>

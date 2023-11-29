@@ -48,9 +48,21 @@
       <li class="links"><a href="dessert.html">Desserts</a></li>
       <li class="links"><a href="cupcakes.html">Cup-Cakes</a></li>
       <li class="infolink"><a href="order-form.html">Order-Form</a></li>
-      <!--Links to the contact button on the index page-->
+      <!--Displays the contact information to the user-->
       <li class="contactinfo"><a href="#contact">Contact-Info</a></li>
     </ul>
+    <!--Creates a drop down nav bar that will be visable on smaller screens and devices-->
+    <select id="pageDropdown" onchange="navigateToPage()">  
+      <option value="seasonal.html">Seasonal</option>
+      <option value="index.html">Home</option> 
+      <option value="occasions.html">Occasions</option>
+      <option value="luxury.html">Luxury</option> 
+      <option value="wedding.html">Weddings</option>  
+      <option value="dessert.html">Desserts</option> 
+      <option value="cupcakes.html">Cup-Cakes</option> 
+      <option value="order-form.html">Order-Form</option> 
+      <option value="#contact">Contact-Info</option> 
+    </select>
   </nav>
   <main>
     <div class="row">
