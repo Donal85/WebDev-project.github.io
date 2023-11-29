@@ -496,10 +496,7 @@ button {
     height: 500px;   
 }
 @media (max-width: 600px) {
-    .imgs { 
-        height: 500px;
-        
-        }
+   
 }
 /*Style the h3 class from the pages with the carousel */
 .subtitle{
