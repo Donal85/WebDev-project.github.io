@@ -497,7 +497,7 @@ button {
 }
 @media (max-width: 600px) {
     .imgs { 
-        height: 200px;
+        height: 500px;
         
         }
 }
