@@ -495,9 +495,7 @@ button {
     
     height: 500px;   
 }
-@media (max-width: 600px) {
-   
-}
+
 /*Style the h3 class from the pages with the carousel */
 .subtitle{
     text-align: center;
