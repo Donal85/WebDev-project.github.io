@@ -496,8 +496,10 @@ button {
     height: 500px;   
 }
 @media (max-width: 600px) {
-    .season { height: 200px;}
-    .season { width: 60%;}
+    .imgs { 
+        height: 200px;
+        width: 60%;
+        }
 }
 /*Style the h3 class from the pages with the carousel */
 .subtitle{
