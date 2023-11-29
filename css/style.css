@@ -289,7 +289,7 @@ nav select {
     height: 550px;
 }
 @media (max-width: 960px) {
-    .season { height: 200px;}
+    .season { height: 300px;}
     
 }
 /*Google font Overpass used*/
@@ -496,10 +496,8 @@ button {
     height: 500px;   
 }
 @media (max-width: 600px) {
-    .imgs { 
-        height: 500px;
-        
-        }
+    .season { height: 200px;}
+    .season { width: 60%;}
 }
 /*Style the h3 class from the pages with the carousel */
 .subtitle{
