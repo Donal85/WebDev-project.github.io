@@ -191,8 +191,8 @@ nav select {
 }
 /*Adjusts the images for mobile's*/
 @media (max-width: 960px) {
-    .cake { height: 400px; }
-    .cake { width: 80%;}
+    .cake { height: 500px; }
+    .cake { width: 100%;}
 }
 /*Sets the size and position of the text within .tag*/
 #tag{
