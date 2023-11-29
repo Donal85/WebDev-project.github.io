@@ -190,7 +190,8 @@ nav select {
     height: 650px;
 }
 @media (max-width: 960px) {
-    .cake { width: 90%; }
+    .cake { width: 100%; }
+    .cake { height: 80%;}
 }
 /*Adjusts the images for mobile's*/
 
