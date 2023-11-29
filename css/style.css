@@ -363,9 +363,9 @@ nav select {
 /* ORDER-FORM STYLING */
 
 /*Form border, border-radius, padding and text alignment */
-#form {
+#div_form {
     border: #000000 solid 1px;
-    width: 440px;
+    width: 24%;
     border-radius: 5px;
     padding: 10px;
     text-align: left;
