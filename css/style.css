@@ -288,10 +288,7 @@ nav select {
     width: 96%;
     height: 550px;
 }
-@media (max-width: 600px) {
-    .season { height: 400px;}
-    .season { width: 80%;}
-}
+
 /*Google font Overpass used*/
 /*Sets the style and size of text for the #tis h4*/
 #tis{
