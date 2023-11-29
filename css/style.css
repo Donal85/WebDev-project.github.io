@@ -484,7 +484,7 @@ button {
     border: goldenrod solid 2px;
     border-radius: 20px;
     width: fit-content;
-    height: 550px;   
+    height: fit-content;   
 }
 /*Style the h3 class from the pages with the carousel */
 .subtitle{
