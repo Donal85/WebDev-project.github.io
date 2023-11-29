@@ -288,9 +288,9 @@ nav select {
     width: 96%;
     height: 550px;
 }
-@media (max-width: 960px) {
-    .season { height: 300px;}
-    
+@media (max-width: 600px) {
+    .season { height: 200px;}
+    .season { width: 60%;}
 }
 /*Google font Overpass used*/
 /*Sets the style and size of text for the #tis h4*/
@@ -481,6 +481,8 @@ button {
 .modal-body {
     padding: 20px;  
 }
+
+
 /* STYLE THE CAROUSEL AND IMAGES */
 .carousel-item {
     position:relative;
@@ -490,9 +492,10 @@ button {
 .imgs {    
     border: goldenrod solid 2px;
     border-radius: 20px;
-    
+    width: fit-content;
     height: 500px;   
 }
+
 /*Style the h3 class from the pages with the carousel */
 .subtitle{
     text-align: center;
