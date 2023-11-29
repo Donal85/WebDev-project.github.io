@@ -128,7 +128,7 @@ header h2 {
 .contactinfo :hover{
     color: gold;
 }
-
+/*Drop down nav bar for mobile/small devices*/
 nav select {
     display: none;
     min-width: 200px;
@@ -138,7 +138,7 @@ nav select {
     color: white;
     background-color: gray;
 }
-
+/*Sets the display parameters for the nav bar based on screen size, hides the nav bar at 960px and displays the droip down */
 @media (max-width: 960px) {
     nav ul     { display: none; }
     nav select { display: inline-block; }
@@ -173,11 +173,11 @@ nav select {
 }
 /*Sets the size and position of the image in the 1st coloumn of the carousel. Also curves the image borders*/
 #homeleft{
-    margin-left: 5%;
-    margin-right: 5%;
-    border-radius: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 10px;
     width: 80%;
-    height: 90%;
+    height: 85%;
 }
 /*Sets the size, style and position of the images within the 2nd coloum of the carousel div*/
 .cake{
@@ -196,10 +196,11 @@ nav select {
 }
 /*Sets the size and position of the images in the 3rd coloumn of the carousel. Also curves the image borders*/
 #homeright{
-    margin-left: 15%;
-    border-radius: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 10px;
     width: 80%;
-    height: 90%;
+    height: 85%;
 }
 /*END OF INDEX PAGE STYLING*/
 
@@ -247,6 +248,11 @@ nav select {
     margin-right: 175px;
     text-align: center;
     font-size: 16px;
+}
+/*Adjusts the footer elements for a smaller/mobile screen*/
+@media (max-width: 960px) {
+    .footer img { width: 6%; }
+    .copyright { margin: auto; }
 }
 /*END OF FOOTER STYLING*/
 
@@ -356,6 +362,8 @@ nav select {
     border-radius: 10px;
 }
 /*END OF CAROUSEL TEXT STYLING*/
+
+
 /*----------------------End of Donal Dempsey Styling-----------------------------------*/
 
 
@@ -363,9 +371,13 @@ nav select {
 /* ORDER-FORM STYLING */
 
 /*Form border, border-radius, padding and text alignment */
-#div_form {
-    border: #000000 solid 1px;
+#div_form{
     width: 24%;
+    margin: auto;
+}
+#form {
+    border: #000000 solid 1px;
+    width: 100%;
     border-radius: 5px;
     padding: 10px;
     text-align: left;
@@ -380,7 +392,7 @@ nav select {
 }
 label {
     width: 150px;
-    display: inline-flex;
+    display: inline-block;
     padding: 2px;
 }
 #contact_preference_label  {
@@ -394,16 +406,12 @@ label {
 #phone_label {
     display: inline;
 }
-#phone {
-    display: inline;
-}
+
 #email2_label {
     display: inline;
     margin-left: 10px;
 }
-#email2 {
-    display: inline;
-}
+
 #quantity_label {
     display: inline;
 }
