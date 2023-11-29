@@ -136,7 +136,7 @@ nav select {
     font-size: 22px;
     padding: 10px 12px;
     color: white;
-    background-color: gray;;
+    background-color: gray;
 }
 
 @media (max-width: 960px) {
