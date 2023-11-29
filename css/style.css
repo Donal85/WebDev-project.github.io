@@ -190,10 +190,7 @@ nav select {
     height: 650px;
 }
 /*Adjusts the images for mobile's*/
-@media (max-width: 960px) {
-    .cake { height: 500px; }
-    .cake { width: 100%;}
-}
+
 /*Sets the size and position of the text within .tag*/
 #tag{
     text-align: center;
@@ -483,10 +480,6 @@ button {
 .carousel-item {
     position:relative;
     text-align: center;
-}
-@media (max-width: 600px) {
-    .carousel-item { height: 200px;}
-    .carousel-item { width: 60%;}
 }
 
 /*Set the images to a hight of 550px */
