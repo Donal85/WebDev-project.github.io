@@ -288,7 +288,7 @@ nav select {
     width: 96%;
     height: 550px;
 }
-@media (max-width: 600px) {
+@media (max-width: 960px) {
     .season { height: 200px;}
     
 }
