@@ -498,7 +498,7 @@ button {
 @media (max-width: 600px) {
     .imgs { 
         height: 200px;
-        width: fit-content;
+        
         }
 }
 /*Style the h3 class from the pages with the carousel */
