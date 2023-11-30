@@ -171,49 +171,50 @@ resets the timer each year after christmas day
 //START OF SEASONAL COUNTDOWN TIMER
 
 //some knowledge and some code obtained from https://www.w3schools.com/howto/howto_js_countdown.asp
+if (window.location.pathname === "/seasonal.html") {
+  // Set the countdown date to Christmas Day
+  var countDownDate = getNextChristmasDate().getTime();
 
-// Set the countdown date to Christmas Day
-var countDownDate = getNextChristmasDate().getTime();
+  // Update the countdown every 1 second
+  var x = setInterval(function () {
+    // Get today's date and time
+    var now = new Date().getTime();
 
-// Update the countdown every 1 second
-var x = setInterval(function () {
-  // Get today's date and time
-  var now = new Date().getTime();
+    // Finds the distance between now and the end of the timer 
+    var distance = countDownDate - now;
 
-  // Finds the distance between now and the end of the timer 
-  var distance = countDownDate - now;
+    //Calculates how many days are remaining, Math.floor rounds down to the nearest whole number to get the remaining full days
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    //Calculates the remaining millisecounds (after subtracting the days), converts the remaining millisecounds to hours Math.floor then rounds down to the nearest whole number to get the remaining full hours
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    //Calculates remaining millisecounds (after subtracting the days and hours), converts the remaining millisecounds to minutes, Math.floor then rounds down to the nearest whole number to get the remaining full minutes
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    //Calculates the remaining millisecounds (after subtracting days, hours and minutes), converts them in to seconds, Math.floor then rounds down to the nearest whole number to get the remaining full seconds
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-  //Calculates how many days are remaining, Math.floor rounds down to the nearest whole number to get the remaining full days
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  //Calculates the remaining millisecounds (after subtracting the days), converts the remaining millisecounds to hours Math.floor then rounds down to the nearest whole number to get the remaining full hours
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  //Calculates remaining millisecounds (after subtracting the days and hours), converts the remaining millisecounds to minutes, Math.floor then rounds down to the nearest whole number to get the remaining full minutes
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  //Calculates the remaining millisecounds (after subtracting days, hours and minutes), converts them in to seconds, Math.floor then rounds down to the nearest whole number to get the remaining full seconds
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    // Display the remaining time in the element with id="time"
+    document.getElementById("time").innerHTML = days + " Days, " + hours + " Hours, "
+      + minutes + " Minutes & " + seconds + " Seconds ";
 
-  // Display the remaining time in the element with id="time"
-  document.getElementById("time").innerHTML = days + " Days, " + hours + " Hours, "
-    + minutes + " Minutes & " + seconds + " Seconds ";
+    // If the countdown is finished, write some text
+    if (distance < 0) {
+      clearInterval(x);
+      document.getElementById("time").innerHTML = "Christmas is here!";
+    }
+  },1000); //End of set intervial (1000 = 1 second) 
 
-  // If the countdown is finished, write some text
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("time").innerHTML = "Christmas is here!";
+  // Function to get the next Christmas date and define end point of timer
+  function getNextChristmasDate() {
+    var today = new Date();
+    var christmasDate = new Date(today.getFullYear(),11,25); // Month is 0-based so December is 11 not 12
+
+    // If today is after Christmas, set the target date to next year
+    if (today > christmasDate) {
+      christmasDate.setFullYear(today.getFullYear() + 1);
+    }
+
+    return christmasDate;
   }
-},1000); //End of set intervial (1000 = 1 second) 
-
-// Function to get the next Christmas date and define end point of timer
-function getNextChristmasDate() {
-  var today = new Date();
-  var christmasDate = new Date(today.getFullYear(),11,25); // Month is 0-based so December is 11 not 12
-
-  // If today is after Christmas, set the target date to next year
-  if (today > christmasDate) {
-    christmasDate.setFullYear(today.getFullYear() + 1);
-  }
-
-  return christmasDate;
 }
 //END OF COUNTDOWNTIMER FUNCTION
 
