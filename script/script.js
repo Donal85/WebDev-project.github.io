@@ -171,6 +171,7 @@ resets the timer each year after christmas day
 //START OF SEASONAL COUNTDOWN TIMER
 
 //some knowledge and some code obtained from https://www.w3schools.com/howto/howto_js_countdown.asp
+//Ensures that the countdown timer is only called by seasonal.html page
 if (window.location.pathname === "/seasonal.html") {
   // Set the countdown date to Christmas Day
   var countDownDate = getNextChristmasDate().getTime();
