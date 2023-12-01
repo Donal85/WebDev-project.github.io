@@ -560,17 +560,15 @@ button {
         padding: 10px;
         text-align: left;
     }
+    /*Adjust the width and height to inherit from parent*/
     #aditional_comments {
         height: 12.5em;
         width: 21.25em;
     }
-    #custom_modal_index {
-        width: 18em;
-    }
     .w_imgs {    
         border: goldenrod solid 2px;
         border-radius: 20px;
-        width: 22.25em;
+        width: 30.25em;
         height: 31.25em; 
     }
     #contact_preference_label  {
