@@ -549,7 +549,7 @@ button {
 @media (max-width: 960px) {
     #form {
         border: #000000 solid 1px;
-        width: 23.5em;
+        width: 22.5rem;
         border-radius: 5px;
         padding: 10px;
         text-align: left;
