@@ -404,15 +404,6 @@ nav select {
     padding: 10px;
     text-align: left;
 }
-@media (max-width: 960px) {
-    #form {
-        border: #000000 solid 1px;
-        width: 26.5em;
-        border-radius: 5px;
-        padding: 10px;
-        text-align: left;
-    }
-}
 /*h3 title Order-Form */
 #contact {
     text-align: center;
@@ -497,8 +488,7 @@ button {
 /*Style terms and conditions link */
 #terms_and_conditions_link {
     text-decoration: none;
-    color: #000000;
-  
+    color: #000000; 
 }
 #terms_and_conditions_link:hover {
     color:goldenrod;
@@ -555,4 +545,17 @@ button {
 }
 /* END OF STYLE THE CAROUSEL AND IMAGES */
 
-
+/*A*/
+@media (max-width: 960px) {
+    #form {
+        border: #000000 solid 1px;
+        width: 23.5em;
+        border-radius: 5px;
+        padding: 10px;
+        text-align: left;
+    }
+    #aditional_comments {
+    height: 12.5em;
+    width: 22.25em;
+    }
+}
