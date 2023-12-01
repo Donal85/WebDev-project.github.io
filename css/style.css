@@ -549,6 +549,12 @@ button {
 @media (max-width: 960px) {
     #form {
         border: #000000 solid 1px;
+        /*
+            I was using em initialy but the form was not displaying correctly on the mobile device, so after doing some 
+            reaserch I figure out the the best element to use in this situation is rem, because if the website is being used from a mobile device the width is inherited from the root instead of the parent which makes the form fit the
+            mobile size screen.  
+            reference: https://elementor.com/help/whats-the-difference-between-px-em-rem-vw-and-vh/
+        */
         width: 22.5rem;
         border-radius: 5px;
         padding: 10px;
@@ -571,11 +577,5 @@ button {
         display:contents;
         margin-right: 20px;
     }
-    #phone_label {
-        display:inline;
-    }
-    #email2_label {
-        display:inline;
-        margin-left: 10px;
-    }
+   
 }
