@@ -6,6 +6,9 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml"
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
+		<loc>https://donal85.github.io/pastryparadise/seasonal.html</loc>
+	</url>
+	<url>
 		<loc>https://donal85.github.io/pastryparadise/</loc>
 	</url>
 	<url>
@@ -18,7 +21,16 @@
 		<loc>https://donal85.github.io/pastryparadise/dessert.html</loc>
 	</url>
 	<url>
+		<loc>https://donal85.github.io/pastryparadise/wedding.html</loc>
+	</url>
+	<url>
 		<loc>https://donal85.github.io/pastryparadise</loc>
+	</url>
+	<url>
+		<loc>https://donal85.github.io/pastryparadise/occasions.html</loc>
+	</url>
+	<url>
+		<loc>https://donal85.github.io/pastryparadise/order-form.html</loc>
 	</url>
 	<url>
 		<loc>https://donal85.github.io/pastryparadise/cupcakes.html</loc>
