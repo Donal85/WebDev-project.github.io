@@ -462,6 +462,7 @@ label {
 #category {
     width: 16.5em;
 }
+/*Adjust the text area input width and height*/
 #aditional_comments {
     height: 12.5em;
     width: 26.25em;
@@ -508,6 +509,9 @@ button {
     padding: 20px;  
 }
 /*Display dashes separator from Modal contact */
+#separator_desktop {
+    display: contents;
+}
 #separator_mobile {
     display: none;
 }
@@ -579,7 +583,10 @@ button {
         display:contents;
         margin-right: 20px;
     }
-    /*Display dashes separator from Modal contact */
+  /*Display dashes separator from Modal contact */
+    #separator_desktop {
+        display: none;
+    }
     #separator_mobile {
         display: contents;
     }
