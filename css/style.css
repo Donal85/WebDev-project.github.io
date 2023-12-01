@@ -404,6 +404,15 @@ nav select {
     padding: 10px;
     text-align: left;
 }
+@media (max-width: 960px) {
+    #form {
+        border: #000000 solid 1px;
+        width: 26.5em;
+        border-radius: 5px;
+        padding: 10px;
+        text-align: left;
+    }
+}
 /*h3 title Order-Form */
 #contact {
     text-align: center;
