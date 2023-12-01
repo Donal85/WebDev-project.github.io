@@ -507,7 +507,10 @@ button {
 .modal-body {
     padding: 20px;  
 }
-
+/*Display dashes separator from Modal contact */
+#separator_mobile {
+    display: none;
+}
 /* STYLE THE CAROUSEL AND IMAGES */
 .carousel-item {
     position:relative;
@@ -576,5 +579,8 @@ button {
         display:contents;
         margin-right: 20px;
     }
-   
+    /*Display dashes separator from Modal contact */
+    #separator_desktop {
+        display: none;
+    }
 }
