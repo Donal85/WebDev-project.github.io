@@ -556,7 +556,7 @@ button {
     }
     #aditional_comments {
         height: 12.5em;
-        width: 22.25em;
+        width: 21.25em;
     }
     #custom_modal_index {
         width: 18em;
@@ -566,5 +566,16 @@ button {
         border-radius: 20px;
         width: 22.25em;
         height: 31.25em; 
-}
+    }
+    #contact_preference_label  {
+        display:contents;
+        margin-right: 20px;
+    }
+    #phone_label {
+        display:inline;
+    }
+    #email2_label {
+        display:inline;
+        margin-left: 10px;
+    }
 }
