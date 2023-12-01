@@ -580,7 +580,8 @@ button {
         margin-right: 20px;
     }
     /*Display dashes separator from Modal contact */
-    #separator_desktop {
-        display: none;
+    #separator_mobile {
+        display: contents;
     }
+
 }
