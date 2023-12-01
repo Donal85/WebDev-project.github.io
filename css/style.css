@@ -573,7 +573,7 @@ button {
         width: 21.25em;
     }
     /*Set the wider images to fit the mobile screen*/
-    .w_imgs {    
+    .imgs, .w_imgs {    
         border: goldenrod solid 2px;
         border-radius: 20px;
         width: 21.25em;
