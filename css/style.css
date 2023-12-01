@@ -399,7 +399,7 @@ nav select {
 /*Form border, border-radius, padding and text alignment */
 #form {
     border: #000000 solid 1px;
-    width: 440px;
+    width: 27.5em;
     border-radius: 5px;
     padding: 10px;
     text-align: left;
@@ -411,10 +411,25 @@ nav select {
     font-weight:bolder;
 }
 label {
-    width: 150px;
+    width: 9.375em;
     display: inline-block;
     padding: 2px;
 }
+/* Set witdth for imputs */
+#name {
+    width: 16.5em;
+}
+#address {
+    width: 16.5em;
+}
+#phone_number {
+    width: 16.5em;
+}
+#email {
+    width: 16.5em;
+}
+/* End set witdth for imputs */
+/*Set labels*/
 #contact_preference_label  {
     display: inline;
     margin-right: 20px;
@@ -426,30 +441,34 @@ label {
 #phone_label {
     display: inline;
 }
-
 #email2_label {
     display: inline;
     margin-left: 10px;
 }
-
 #quantity_label {
     display: inline;
-}
-#quantity {
-    width: 4em;
-    margin-left: 70px;
 }
 #comments_label {
     display: inline;
     margin-left: 5px;
 }
+/*End Set labels*/
+/*Set quantity input*/
+#quantity {
+    width: 4em;
+    margin-left: 70px;
+}
 /*Set the width of cake option goup */
 #category {
-    width: 110px;
+    width: 16.5em;
+}
+#aditional_comments {
+    height: 12.5em;
+    width: 26.25em;
 }
 /*Style the buttons */ 
 button {
-    width: 100px;
+    width: 10em;
     padding: 5px;
     border-radius: 10px;
     border-color: goldenrod;
@@ -501,7 +520,7 @@ button {
     border: goldenrod solid 2px;
     border-radius: 20px;
     width: fit-content;
-    height: 500px;   
+    height: 31.25em;/*31.25em is equivalent to 500px*/   
 }
 
 /*Style the h3 class from the pages with the carousel */
