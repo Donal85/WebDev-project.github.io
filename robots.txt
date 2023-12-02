@@ -1,7 +1,7 @@
 User-agent: *
 Disallow: /script/
 Disallow: /css/
-Allow: /images/
+Allow: /images/*
 Allow: /cupcakes.html
 Allow: /dessert.html
 Allow: /donal85.github.io_sitemap_1.xml
