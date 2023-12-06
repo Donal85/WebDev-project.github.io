@@ -262,7 +262,7 @@ function back() {
   -The method accepts 2 parameters. The first one is the type and second one is the listener, 
     but in our care we use an anonymous function. It is called an anonymous function because 
     its created on the spot and has no name, simmilar to anonymous classes in java :) .  
-
+     
   */
 document.addEventListener('DOMContentLoaded',function () {
   //Select the form
